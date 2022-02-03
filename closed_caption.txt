@@ -1,0 +1,74 @@
+19:20:21 So I'm going to start recording again.
+19:20:44 So, I am going to go through a rubric that we developed and watching yourself type or get transcribed is very distracting. I'm going to go through a rubric that we developed for business datasets, but it's pretty easy to generalize to other data sets
+19:21:08 and embarrassingly, I think I'm going to have to go search for it on the web, because I don't know where it is.
+19:21:27 Yeah.
+19:21:40 Okay.
+19:21:45 Like, you know, shameless pitch you can go to my company's website and get almost all of this stuff.
+19:22:07 is expensive first.
+19:22:53 We are looking for is the data reading us how to
+19:23:00 fill out.
+19:23:02 Stupid download form.
+19:23:15 Now I'm just trolling our marketing guys.
+19:23:32 Okay,
+19:23:38 and loving actually download this.
+19:23:45 And I will
+19:23:49 post this in discord for you guys.
+19:24:08 Like why is my internet so slow and it's not my internet is the fact that my laptop is out of battery.
+19:25:33 This is the important. This is really a one page.
+19:25:43 Data tool.
+19:25:46 And I'm going to kind of gloss over the red column, because honestly if anything's in the red for you guys, you're just not going to do it, usually read would mean things like making phone calls or writing emails.
+19:26:02 So, there are five factors that we typically think of when we evaluate a data set, accessibility.
+19:26:12 The format of the data, whether it's something that you can easily read.
+19:26:17 Usually if you're working with something that's like CSV or JSON. This is a non issue but sometimes you get other word formats that you got to deal with.
+19:26:28 In this case, we call it asset tagging.
+19:26:31 I would consider instead of. So, this is specific for manufacturing and in doing machines but I would consider, you know, your equivalent of asset tagging is really can this data be assigned to our combined with other data so for instance if you have,
+19:26:51 let's say a bunch of zip code level data, and a bunch of county level data, those might be a little bit hard to merge, at some point, and you would have to work on that.
+19:27:02 So this is really,
+19:27:06 you know, asset tagging is can you put that data against an asset that you want to use as your sort of perspective for the project data related ability.
+19:27:21 So, this is can you connect to data sources together. Usually, I would say in 80 to 90% of cases, that is going to be based on some sort of time and or like location.
+19:27:37 But there may be other you know ways that you want to relate something like if you're doing you know something with Twitter you might want to use keywords for reliability.
+19:27:48 And then, institutional knowledge of data is what I would consider, you know, in your case with public data are there sort of like documents and resources that describe the data set and tell you what it's about.
+19:28:02 Are you just getting like a pile of files that you have to go in and do a bunch of detective work on how to use it.
+19:28:09 So, each one of these factors, you know has sort of like red, green, blue, and these get what I would consider.
+19:28:22 You know, this is very coarse grained you can get more detailed so I would consider something green.
+19:28:29 If it is either accessible via a public API, and you know that it's not going to be limited to hardcore, that would be green accessible.
+19:28:41 If it is so big you can't possibly downloaded onto your laptop or can't get it onto an environment to do computing, that I would say it's probably yellow, like you're going to have to do some work you're going to have to chop it up or batch it up somehow
+19:29:03 and in order to get it done. You may have to get a virtualized environment first and get some storage.
+19:29:02 If it's something that where it is, you know, so large we you know we can't possibly use it, it would be thousands of dollars or like you have to pay for an API endpoint it's read format protocol schema for you guys specifically I would say, if it is
+19:29:22 in JSON XML CSV.
+19:29:27 something along those lines is probably green.
+19:29:30 If you are writing a custom parsing. It is probably yellow.
+19:29:37 And if it is something where you, you know, would have to, you know, consult a 50 page reference document and write, you know, bitwise xR competitors in order to be able to decode is probably read.
+19:29:55 And not that you couldn't do it but it just may not be where you want to put your time for asset tagging.
+19:30:02 The big thing that I would look for here is just, you know, if you're thinking of merging to multiple data sets, or you're thinking of having people like search a data set as part of your project.
+19:30:15 You know how easy is it to extract the tokens that you're going to use is identifying characteristics.
+19:30:22 If you know, like you're on Twitter, on the Twitter data set everything has a you know name you know you're, you know you can do word extraction very easily that would be green.
+19:30:33 If it's something where you may have to do a mapping step, so like zip codes and counties. Well, you know, they're not the same thing but you probably could find a table somewhere that would let you convert those
+19:30:47 if it's if it's something that's red. That means that you like maybe you have some data that is manual entry and you need to do natural language processing on it first just to be able to get it relatable.
+19:31:01 Again, probably not where you want to be spending your time.
+19:31:06 Data relate ability, so this is basically like, you know, doesn't have a timestamp doesn't have an ID does it have some characteristic.
+19:31:16 You know, yellow, if it's something where maybe okay well I have one thing that is daily data and one thing that is monthly data or at one thing that is daily data and one thing that is our lead data you can write a little conversion that will get it
+19:31:31 working.
+19:31:32 You know, maybe you don't know the timezone of one of the data sets and you have to apply that.
+19:31:43 And then, institutional knowledge of data is really about the documentation, can you find code samples that works with that data, it's always very helpful so if you're using, like, you know, reading API's or Twitter API is like code samples galore.
+19:31:57 Most of the NIS t datasets, usually have a little bit of code that you know work through them.
+19:32:07 If you're just, if you're the data is pretty well structured but you don't really have documentation on it and it's a little bit more sort of like, you know, oh hey, I found this web application that's using this API call that I can kind of work my way
+19:32:21 through. That's yellow, and like, again, you know if you're hauling out your hex editor and, you know, scrolling to width to see where you're, you know, word is repeated it's probably read.
+19:32:36 The reason why you do this is that you kind of have a budget in your head for the reds, or the yellows that you're going to be able to encounter, and like, you know, I often get a lot of things that are in the red and things that are in the red usually
+19:32:54 require organizational negotiation or some sort of other management, what I'm going to you know go work on a project.
+19:33:04 So, as you are going through data sets at encourage you to, you know, I'm not going to ask you to read, you know, fill out this form, and return it.
+19:33:18 But it would not be a bad idea to think about, you know, these five characteristics.
+19:33:24 And I would say you guys probably want two to three yellows, because you'll want some things that are going to be just easy and straightforward, so that you don't have to spend time doing those things.
+19:33:36 Because everything that's yellow, given that it's a class, I would say add two weeks to your budget.
+19:33:45 In terms of how much time it's going to take to implement and green stuff is probably going to be a week.
+19:33:55 That kind of sort of makes sense.
+19:33:58 And, I mean, I have, there's more details on the stuff it's, you know, very very manufacturing centric so you have to put on your translation cap, but,
+19:34:13 you know, this, this data audit tool is pretty generalizable, it's just this asset tagging instead of like, you know, because we are doing automation equipment, it's specific to automation equipment that is that is sort of the orienting principle of this
+19:34:30 data.
+19:34:33 You know, when you think about how you want to organize the data to solve a problem, you need to have some way to relate that.
+19:34:43 Any, any questions on dataset evaluation.
+19:34:53 Someone on zoom,
+19:35:02 what everybody possible to see sample projects from previous semesters just to get a better understanding of the project to help us choose topics.
+19:35:10 Absolutely. I do, I do have some sample projects.
+19:35:17 I would like a chance to kind of curate them a little bit but I was planning on sending those out before we, too, So we'll, we'll do those next week.
+19:35:40 Any other topics you guys would like to cover today.
