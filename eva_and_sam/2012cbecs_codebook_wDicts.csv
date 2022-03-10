@@ -97,23 +97,23 @@ Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
 Missing = Not applicable","{'1': 'More glass area', '2': 'Less glass area', '3': 'About the same amount', 'Missing': 'Not applicable'}"
 1,16.0,NFLOOR,Num,8.0,,Number of floors,"1 - 14
 994 = 15 to 25
-995 = More than 25","{'1 - 14': 'continuous numerical range', '994': '15 to 25', '995': 'More than 25'}"
+995 = More than 25","{'1 - 14\r': 'continuous numerical range', '994': '15 to 25', '995': 'More than 25'}"
 1,17.0,BASEMNT,Num,8.0,,Number of underground floors,"0 - 7
-Missing = Not applicable","{'0 - 7': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'0 - 7\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 1,18.0,FLCEILHT,Num,8.0,,Floor to ceiling height,"6 - 50
-995 = More than 50","{'6 - 50': 'continuous numerical range', '995': 'More than 50'}"
+995 = More than 50","{'6 - 50\r': 'continuous numerical range', '995': 'More than 50'}"
 1,19.0,ATTIC,Char,1.0,$YESNO.,Attic,"'1' = 'Yes'
 '2' = 'No'","{'1': 'Yes', '2': 'No'}"
 1,20.0,ELEVTR,Char,1.0,$YESNO.,Elevators,"'1' = 'Yes'
 '2' = 'No'
 Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
-1,21.0,NELVTR,Num,8.0,,Number of elevators,"1 - 50
-995 = More than 50","{'1 - 50': 'continuous numerical range', '995': 'More than 50'}"
+1,21.0,NELVTR,Num,8.0,,Number of elevators,"1 - 50; 
+995 = More than 50","{'1 - 50; \r': 'continuous numerical range', '995': 'More than 50'}"
 1,22.0,ESCLTR,Char,1.0,$YESNO.,Escalators,"'1' = 'Yes'
 '2' = 'No'
 Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
 1,23.0,NESLTR,Num,8.0,,Number of escalators,"1 - 20
-995 = More than 20","{'1 - 20': 'continuous numerical range', '995': 'More than 20'}"
+995 = More than 20","{'1 - 20\r': 'continuous numerical range', '995': 'More than 20'}"
 1,24.0,YRCON,Num,8.0,,Year of construction,"995 = Before 1946
 1946 - 2012","{'995': 'Before 1946', '1946 - 2012': 'continuous numerical range'}"
 1,25.0,YRCONC,Char,2.0,$YRCONC.,Year of construction category,"'01' = 'Before 1920'
@@ -248,11 +248,11 @@ Missing = Not applicable","{'11': 'Office/Professional', '12': 'Data center/Comp
 '28' = 'Other'
 Missing = Not applicable","{'11': 'Office/Professional', '12': 'Data center/Computer ""server farm""', '13': 'Warehouse/Storage', '14': 'Food sales or service', '15': 'Enclosed mall', '16': 'Retail (other than mall)', '17': 'Education', '18': 'Religious worship', '19': 'Public assembly', '20': 'Health care', '21': 'Service', '22': 'Lodging', '23': 'Public order and safety', '24': 'Residential', '25': 'Industrial', '26': 'Agricultural', '27': 'Vacant', '28': 'Other', 'Missing': 'Not applicable'}"
 1,47.0,ACT1PCT,Num,8.0,,Percent used for first activity,"1 - 100
-Missing = Not applicable","{'1 - 100': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'1 - 100\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 1,48.0,ACT2PCT,Num,8.0,,Percent used for second activity,"1 - 100
-Missing = Not applicable","{'1 - 100': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'1 - 100\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 1,49.0,ACT3PCT,Num,8.0,,Percent used for third activity,"1 - 100
-Missing = Not applicable","{'1 - 100': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'1 - 100\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 1,50.0,PBAPLUS,Char,2.0,$PBAPLUS.,More specific building activity,"'01' = 'Vacant'
 '02' = 'Administrative/professional office'
 '03' = 'Bank/other financial'
@@ -326,23 +326,23 @@ Missing = Not applicable","{'1': '1 to 20 percent', '2': '21 to 50 percent', '3'
 Missing = Not applicable","{'1': 'Near perimeter of building', '2': 'In core of building', '3': 'Entire building is open plan', 'Missing': 'Not applicable'}"
 1,56.0,RWSEAT,Num,8.0,COMMA6.,Religious worship seating capacity,"20 - 1,500
 99,995 = More than 15,000
-Missing = Not applicable","{'20 - 1,500': 'continuous numerical range', '99,995': 'More than 15,000', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'20 - 1,500\r': 'continuous numerical range', '99,995': 'More than 15,000', 'Missing': 'Not applicable'}"
 1,57.0,PBSEAT,Num,8.0,COMMA6.,Assembly seating capacity,"0 - 15,000
 999995 = More than 15,000
-Missing = Not applicable","{'0 - 15,000': 'continuous numerical range', '999995': 'More than 15,000', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'0 - 15,000\r': 'continuous numerical range', '999995': 'More than 15,000', 'Missing': 'Not applicable'}"
 1,58.0,EDSEAT,Num,8.0,COMMA6.,Number of classroom seats,"10 - 8,000
-Missing = Not applicable","{'10 - 8,000': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'10 - 8,000\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 1,59.0,FDSEAT,Num,8.0,COMMA6.,Food service seating capacity,"0 - 700
-Missing = Not applicable","{'0 - 700': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'0 - 700\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 1,60.0,HCBED,Num,8.0,COMMA6.,Licensed bed capacity,"25 - 250
 9,995 = More than 250
-Missing = Not applicable","{'25 - 250': 'continuous numerical range', '9,995': 'More than 250', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'25 - 250\r': 'continuous numerical range', '9,995': 'More than 250', 'Missing': 'Not applicable'}"
 1,61.0,NRSBED,Num,8.0,COMMA6.,Licensed bed capacity,"16 - 250
 9,995 = More than 250
-Missing = Not applicable","{'16 - 250': 'continuous numerical range', '9,995': 'More than 250', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'16 - 250\r': 'continuous numerical range', '9,995': 'More than 250', 'Missing': 'Not applicable'}"
 1,62.0,LODGRM,Num,8.0,COMMA6.,Number of guest rooms,"2 - 900
 99,995 = More than 900
-Missing = Not applicable","{'2 - 900': 'continuous numerical range', '99,995': 'More than 900', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'2 - 900\r': 'continuous numerical range', '99,995': 'More than 900', 'Missing': 'Not applicable'}"
 1,63.0,COURT,Char,1.0,$YESNO.,Food court,"'1' = 'Yes'
 '2' = 'No'
 Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
@@ -407,7 +407,7 @@ Missing = Not applicable","{'1': 'Federal', '2': 'State', '3': 'Local', '7': 'Wi
 '10' = 'Local government'
 '97' = Withheld to protect confidentiality'","{'01': 'Real estate investment trust (REIT)', '02': 'Other public or private corporation, partnership, LLC, or LLP', '03': 'Individual owner(s)', '04': 'Religious organization', '05': 'Non-profit organization (other than religious or government)', '06': 'Private academic institution', '07': 'Other non-government', '08': 'Federal government', '09': 'State government', '10': 'Local government', '97': 'Withheld to protect confidentiality'}"
 2,77.0,NOCC,Num,8.0,,Number of businesses,"0 - 200
-995 = More than 200","{'0 - 200': 'continuous numerical range', '995': 'More than 200'}"
+995 = More than 200","{'0 - 200\r': 'continuous numerical range', '995': 'More than 200'}"
 2,78.0,NOCCAT,Char,2.0,$NOCCAT.,Number of businesses category,"'01' = 'Zero'
 '02' = 'One'
 '03' = '2 to 5'
@@ -449,9 +449,9 @@ Missing = Not applicable","{'1': 'Property management company or leasing agent',
 Missing = Not applicable","{'1': 'Building owner', '2': 'Party responsible for building operations', '3': 'Both (either they have equal input, or are the same person)', '4': 'Other', 'Missing': 'Not applicable'}"
 3,85.0,MONUSE,Num,8.0,,Months in use,0 - 12,{'0 - 12': 'continuous numerical range'}
 3,86.0,OCCUPYP,Num,8.0,,Percent occupancy,"0 - 100
-Missing = Not applicable","{'0 - 100': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'0 - 100\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 3,87.0,LODOCCP,Num,8.0,,Lodging room percent occupancy,"0 - 100
-Missing = Not applicable","{'0 - 100': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'0 - 100\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 3,88.0,OPEN24,Char,1.0,$YESNO.,Open 24 hours a day,"'1' = 'Yes'
 '2' = 'No'","{'1': 'Yes', '2': 'No'}"
 3,89.0,OPNMF,Char,1.0,$DAYSOPN.,Open during week,"'1' = 'All five days'
@@ -589,7 +589,7 @@ Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
 '2' = 'No'
 Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
 4,136.0,HEATP,Num,8.0,,Percent heated,"0 - 100
-Missing = Not applicable","{'0 - 100': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'0 - 100\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 4,137.0,HTLS50,Char,1.0,$YESNO.,Heated to less than 50 degrees,"'1' = 'Yes'
 '2' = 'No'
 Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
@@ -615,19 +615,19 @@ Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
 '2' = 'No'
 Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
 4,145.0,FURNP,Num,8.0,,Percent heated by furnace,"1 - 100
-Missing = Not applicable","{'1 - 100': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'1 - 100\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 4,146.0,PKGHP,Num,8.0,,Percent heated by packaged heating,"1 - 100
-Missing = Not applicable","{'1 - 100': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'1 - 100\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 4,147.0,BOILP,Num,8.0,,Percent heated by boiler,"1 - 100
-Missing = Not applicable","{'1 - 100': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'1 - 100\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 4,148.0,STHWP,Num,8.0,,Percent heated by dist steam/hot water,"1 - 100
-Missing = Not applicable","{'1 - 100': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'1 - 100\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 4,149.0,HTPHP,Num,8.0,,Percent heated by heat pumps,"1 - 100
-Missing = Not applicable","{'1 - 100': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'1 - 100\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 4,150.0,SLFCNP,Num,8.0,,Percent heated by individual space heaters,"1 - 100
-Missing = Not applicable","{'1 - 100': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'1 - 100\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 4,151.0,OTHTP,Num,8.0,,Percent heated by other heating equipment,"1 - 100
-Missing = Not applicable","{'1 - 100': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'1 - 100\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 4,152.0,MAINHT,Char,1.0,$HTEQP.,Main heating equipment,"'1' = 'Furnaces that heat air directly, without using steam or hot water'
 '2' = 'Packaged central unit (roof mounted)'
 '3' = 'Boilers inside (or adjacent to) the building that produce steam or hot water'
@@ -807,7 +807,7 @@ Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
 '2' = 'No'
 Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
 4,208.0,COOLP,Num,8.0,,Percent cooled,"1 - 100
-Missing = Not applicable","{'1 - 100': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'1 - 100\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 4,209.0,RCAC,Char,1.0,$YESNO.,Residential type central A/C,"'1' = 'Yes'
 '2' = 'No'
 Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
@@ -833,21 +833,21 @@ Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
 '2' = 'No'
 Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
 4,217.0,RCACP,Num,8.0,,Percent cooled by central A/C,"1 - 100
-Missing = Not applicable","{'1 - 100': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'1 - 100\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 4,218.0,PKGCP,Num,8.0,,Percent cooled by packaged A/C units,"1 - 100
-Missing = Not applicable","{'1 - 100': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'1 - 100\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 4,219.0,CHILP,Num,8.0,,Percent cooled by central chillers,"1 - 100
-Missing = Not applicable","{'1 - 100': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'1 - 100\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 4,220.0,CHWTP,Num,8.0,,Percent cooled by district chilled water,"1 - 100
-Missing = Not applicable","{'1 - 100': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'1 - 100\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 4,221.0,HTPCP,Num,8.0,,Percent cooled by heat pumps,"1 - 100
-Missing = Not applicable","{'1 - 100': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'1 - 100\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 4,222.0,ACWNWP,Num,8.0,,Percent cooled by individual room A/C,"1 - 100
-Missing = Not applicable","{'1 - 100': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'1 - 100\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 4,223.0,EVAPP,Num,8.0,,Percent cooled by swamp coolers,"1 - 100
-Missing = Not applicable","{'1 - 100': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'1 - 100\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 4,224.0,OTCLP,Num,8.0,,Percent cooled by other cooling equipment,"1 - 100
-Missing = Not applicable","{'1 - 100': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'1 - 100\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 4,225.0,MAINCL,Char,2.0,$CLEQP.,Main cooling equipment,"'1' = 'Residential-type central air conditioners (other than heat pumps) that cool air directly and circulate it without using chilled water'
 '2' = 'Packaged air conditioning units (other than heat pumps)'
 '3' = 'Central chillers inside (or adjacent to) the building that chill water for air conditioning'
@@ -1026,7 +1026,7 @@ Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
 '3' = 'Both types'
 Missing = Not applicable","{'1': 'One or more centralized water heaters', '2': 'One or more ""point-of-use"" water heaters', '3': 'Both types', 'Missing': 'Not applicable'}"
 4,280.0,BOOSTWT,Num,8.0,,Booster water heaters,"0 - 60
-Missing = Not applicable","{'0 - 60': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'0 - 60\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 4,281.0,INSTWT,Char,1.0,$YESNO.,Instant hot water,"'1' = 'Yes'
 '2' = 'No'
 Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
@@ -1186,7 +1186,7 @@ Missing = Not applicable","{'1': 'Yes', '2': 'No', '8': 'Refused', '9': 'Dont kn
 Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
 4,331.0,ELLUPCT,Num,8.0,,Percent of elec from local utility,"1 - 100
 999 = Don't know
-Missing = Not applicable","{'1 - 100': 'continuous numerical range', '999': 'Dont know', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'1 - 100\r': 'continuous numerical range', '999': 'Dont know', 'Missing': 'Not applicable'}"
 4,332.0,NGSRC,Char,1.0,$NGSRC.,How purchase natural gas,"'1' = 'Bought from the local utility'
 '2' = 'Bought from someone else, such as a non-utility or a broker' 
 '3'  ='Bought both ways'
@@ -1210,7 +1210,7 @@ Missing = Not applicable","{'1': 'Less than 1 cord', '2': '1 to 9 cords', '3': '
 Missing = Not applicable","{'1': 'Purchased all the wood', '2': 'Obtained it all free of charge', '3': 'Some purchased and some free', 'Missing': 'Not applicable'}"
 4,337.0,WOEXP,Num,8.0,COMMA6.,Expenditures for wood,"2 - 16,000
 999,999 = Don't know
-Missing = Not applicable","{'2 - 16,000': 'continuous numerical range', '999,999': 'Dont know', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'2 - 16,000\r': 'continuous numerical range', '999,999': 'Dont know', 'Missing': 'Not applicable'}"
 4,338.0,WOEXPC,Char,1.0,$WODOLS.,Wood expenditures category,"'1' = '$1 to $100'
 '2' = '$101 to $500'
 '3' = '$501 to $1,000'
@@ -1258,13 +1258,13 @@ Missing = Not applicable","{'1': 'In this building', '2': 'In another building o
 '2' = 'No'
 Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
 6,351.0,CONFSPP,Num,8.0,,Percent conference or event space,"1 - 50
-Missing = Not applicable","{'1 - 50': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'1 - 50\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 6,352.0,MEDEQP,Char,1.0,$YESNO.,Medical equipment,"'1' = 'Yes'
 '2' = 'No'
 Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
 6,353.0,XRAYN,Num,8.0,,Number of X-ray machines,"0 - 20
 995 = More than 20
-Missing = Not applicable","{'0 - 20': 'continuous numerical range', '995': 'More than 20', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'0 - 20\r': 'continuous numerical range', '995': 'More than 20', 'Missing': 'Not applicable'}"
 6,354.0,CTSCAN,Char,1.0,$YESNO.,CT scan machines,"'1' = 'Yes'
 '2' = 'No'
 Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
@@ -1327,22 +1327,22 @@ Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
 '2' = 'No'
 Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
 6,373.0,RFGRSN,Num,8.0,COMMA5.,Number of residential refrigerators,"1 - 1,000
-Missing = Not applicable","{'1 - 1,000': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'1 - 1,000\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 6,374.0,RFGCOMPN,Num,8.0,COMMA5.,Number of compact refrigerators,"1 - 1,000
 99995 = More than 1,000
-Missing = Not applicable","{'1 - 1,000': 'continuous numerical range', '99995': 'More than 1,000', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'1 - 1,000\r': 'continuous numerical range', '99995': 'More than 1,000', 'Missing': 'Not applicable'}"
 6,375.0,RFGWIN,Num,8.0,,Number of walk-in units,"1 - 350
-Missing = Not applicable","{'1 - 350': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'1 - 350\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 6,376.0,RFGOPN,Num,8.0,,Number of open case refrigeration units,"1 - 300
-Missing = Not applicable","{'1 - 300': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'1 - 300\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 6,377.0,RFGCLN,Num,8.0,,Number of closed case refrigeration units,"1 - 500
-Missing = Not applicable","{'1 - 500': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'1 - 500\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 6,378.0,RFGVNN,Num,8.0,,Number of refrigerated vending machines,"1 - 300
-Missing = Not applicable","{'1 - 300': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'1 - 300\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 6,379.0,RFGICN,Num,8.0,,Number of ice makers,"1 - 500
-Missing = Not applicable","{'1 - 500': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'1 - 500\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 6,380.0,RFGSTP,Num,8.0,,Percent cold storage,"1 - 100
-Missing = Not applicable","{'1 - 100': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'1 - 100\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 6,381.0,WHRECOV,Char,1.0,$YESNO.,Waste heat recovery,"'1' = 'Yes'
 '2' = 'No'
 Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
@@ -1359,7 +1359,7 @@ Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
 '2' = 'No'
 Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
 6,386.0,PCTERMN,Num,8.0,COMMA8.,Number of computers,"0 - 4,195
-Missing = Not applicable","{'0 - 4,195': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'0 - 4,195\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 6,387.0,PCTRMC,Char,2.0,$PCTRMC.,Number of computers category,"'00' = 'Zero'
 '01' = '1 to 4'
 '02' = '5 to 9'
@@ -1387,7 +1387,7 @@ Missing = Not applicable","{'1': 'All', '2': 'Most', '3': 'Some', '4': 'A few', 
 '5' = 'None'
 Missing = Not applicable","{'1': 'All', '2': 'Most', '3': 'Some', '4': 'A few', '5': 'None', 'Missing': 'Not applicable'}"
 6,391.0,LAPTPN,Num,8.0,COMMA8.,Number of laptops,"0 - 1,420
-Missing = Not applicable","{'0 - 1,420': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'0 - 1,420\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 6,392.0,LAPTPC,Char,2.0,$LAPTPC.,Number of laptops category,"'00' = 'Zero'
 '01' = '1 to 4'
 '02' = '5 to 9'
@@ -1400,7 +1400,7 @@ Missing = Not applicable","{'0 - 1,420': 'continuous numerical range', 'Missing'
 '09' = '1,000 or more'
 Missing = Not applicable","{'00': 'Zero', '01': '1 to 4', '02': '5 to 9', '03': '10 to 19', '04': '20 to 49', '05': '50 to 99', '06': '100 to 249', '07': '250 to 499', '08': '500 to 999', '09': '1,000 or more', 'Missing': 'Not applicable'}"
 6,393.0,PRNTRN,Num,8.0,COMMA8.,Number of printers,"0 - 5,000
-Missing = Not applicable","{'0 - 5,000': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'0 - 5,000\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 6,394.0,PRNTYP,Char,1.0,$PRNTR.,Type of printers,"'1' = 'Inkjet'
 '2' = 'Laser'
 '3' = 'Some other type'
@@ -1411,7 +1411,7 @@ Missing = Not applicable","{'1': 'Inkjet', '2': 'Laser', '3': 'Some other type',
 Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
 6,396.0,SERVERN,Num,8.0,COMMA8.,Number of servers,"0 - 499
 9,995 = 500 or more
-Missing = Not applicable","{'0 - 499': 'continuous numerical range', '9,995': '500 or more', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'0 - 499\r': 'continuous numerical range', '9,995': '500 or more', 'Missing': 'Not applicable'}"
 6,397.0,SERVERC,Char,2.0,$SERVERC.,Number of servers category,"'00' = 'Zero'
 '01' = '1 to 4'
 '02' = '5 to 9'
@@ -1445,22 +1445,22 @@ Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
 Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
 6,404.0,TVVIDEON,Num,8.0,COMMA5.,Number of TV or video displays,"1 - 200
 995 = More than 200
-Missing = Not applicable","{'1 - 200': 'continuous numerical range', '995': 'More than 200', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'1 - 200\r': 'continuous numerical range', '995': 'More than 200', 'Missing': 'Not applicable'}"
 6,405.0,RGSTR,Char,1.0,$YESNO.,Cash registers,"'1' = 'Yes'
 '2' = 'No'
 Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
 6,406.0,RGSTRN,Num,8.0,COMMA5.,Number of cash registers,"1 - 500
-Missing = Not applicable","{'1 - 500': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'1 - 500\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 6,407.0,COPIER,Char,1.0,$YESNO.,Photocopiers,"'1' = 'Yes'
 '2' = 'No'
 Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
 6,408.0,COPIERN,Num,8.0,COMMA5.,Number of photocopiers,"1 - 1,500
-Missing = Not applicable","{'1 - 1,500': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'1 - 1,500\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 6,409.0,FAX,Char,1.0,$YESNO.,FAX machines,"'1' = 'Yes'
 '2' = 'No'
 Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
 7,410.0,LTOHRP,Num,8.0,,Percent lit when open,"0 - 100
-Missing = Not applicable","{'0 - 100': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'0 - 100\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 7,411.0,LOHRPC,Char,1.0,$LIT1CAT.,Lit when open category,"'1' = '1 to 25 percent'
 '2' = '26 to 50 percent'
 '3' = '51 to 75 percent'
@@ -1471,7 +1471,7 @@ Missing = Not applicable","{'1': '1 to 25 percent', '2': '26 to 50 percent', '3'
 '2' = 'No'
 Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
 7,413.0,LTNHRP,Num,8.0,,Percent lit off hours,"0 - 100
-Missing = Not applicable","{'0 - 100': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'0 - 100\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 7,414.0,LNHRPC,Char,1.0,$LIT2CAT.,Lit off hours category,"'1' = '1 to 25 percent'
 '2' = '26 to 50 percent'
 '3' = '51 to 75 percent'
@@ -1503,19 +1503,19 @@ Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
 '2' = 'No'
 Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
 7,423.0,FLUORP,Num,8.0,,Percent lit by fluorescent,"0 - 100
-Missing = Not applicable","{'0 - 100': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'0 - 100\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 7,424.0,CFLRP,Num,8.0,,Percent lit by compact fluorescent,"0 - 100
-Missing = Not applicable","{'0 - 100': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'0 - 100\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 7,425.0,BULBP,Num,8.0,,Percent lit by incandescent,"0 - 100
-Missing = Not applicable","{'0 - 100': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'0 - 100\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 7,426.0,HALOP,Num,8.0,,Percent lit by halogen,"0 - 100
-Missing = Not applicable","{'0 - 100': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'0 - 100\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 7,427.0,HIDP,Num,8.0,,Percent lit by HID,"0 - 100
-Missing = Not applicable","{'0 - 100': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'0 - 100\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 7,428.0,LEDP,Num,8.0,,Percent lit by LED,"0 - 100
-Missing = Not applicable","{'0 - 100': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'0 - 100\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 7,429.0,OTLTP,Num,8.0,,Percent lit by other lighting,"0 - 100
-Missing = Not applicable","{'0 - 100': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'0 - 100\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 7,430.0,EMCSLT,Char,1.0,$YESNO.,BAS controls lighting,"'1' = 'Yes'
 '2' = 'No'
 Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
@@ -1565,23 +1565,12 @@ Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
 '2' = 'No'
 Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
 7,445.0,DAYLTP,Num,8.0,,Percent daylight,"0 - 100
-Missing = Not applicable","{'0 - 100': 'continuous numerical range', 'Missing': 'Not applicable'}"
+Missing = Not applicable","{'0 - 100\r': 'continuous numerical range', 'Missing': 'Not applicable'}"
 10,1049.0,HDD65,Num,8.0,,Heating degree days (base 65),,{'no code': 'continuous numerical value'}
 10,1050.0,CDD65,Num,8.0,,Cooling degree days (base 65),,{'no code': 'continuous numerical value'}
 10,1051.0,MFUSED,Char,1.0,$YESNO.,Any major fuel used,"'1' = 'Yes'
 '2' = 'No'
 Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
-10,1052.0,MFBTU,Num,8.0,,Annual major fuel consumption (thous Btu),,{'no code': 'continuous numerical value'}
-10,1053.0,MFEXP,Num,8.0,,Annual major fuel expenditures ($),,{'no code': 'continuous numerical value'}
-10,1054.0,ELCNS,Num,8.0,,Annual electricity consumption (kWh),,{'no code': 'continuous numerical value'}
-10,1055.0,ELBTU,Num,8.0,,Annual electricity consumption (thous Btu),,{'no code': 'continuous numerical value'}
-10,1056.0,ELEXP,Num,8.0,,Annual electricity expenditures ($),,{'no code': 'continuous numerical value'}
-10,1057.0,NGCNS,Num,8.0,,Annual natural gas consumption (ccf),,{'no code': 'continuous numerical value'}
-10,1058.0,NGBTU,Num,8.0,,Annual natural gas consumption (thous Btu),,{'no code': 'continuous numerical value'}
-10,1059.0,NGEXP,Num,8.0,,Annual natural gas expenditures ($),,{'no code': 'continuous numerical value'}
-10,1060.0,FKCNS,Num,8.0,,Annual fuel oil consumption (gallons),,{'no code': 'continuous numerical value'}
-10,1061.0,FKBTU,Num,8.0,,Annual fuel oil consumption (thous Btu),,{'no code': 'continuous numerical value'}
-10,1062.0,FKEXP,Num,8.0,,Annual fuel oil expenditures ($),,{'no code': 'continuous numerical value'}
 10,1063.0,DHUSED,Char,1.0,$YESNO.,District heat (steam or hot water) used,"'1' = 'Yes'
 '2' = 'No'
 Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
@@ -1606,59 +1595,6 @@ Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
 10,1070.0,DHOTH,Char,1.0,$YESNO.,District heat used for some other use,"'1' = 'Yes'
 '2' = 'No'
 Missing = Not applicable","{'1': 'Yes', '2': 'No', 'Missing': 'Not applicable'}"
-10,1071.0,DHCNS,Num,8.0,,Annual district heat consumption (thous lbs),,{'no code': 'continuous numerical value'}
-10,1072.0,DHBTU,Num,8.0,,Annual district heat consumption (thous Btu),,{'no code': 'continuous numerical value'}
-10,1073.0,DHEXP,Num,8.0,,Annual district heat expenditures ($),,{'no code': 'continuous numerical value'}
-10,1074.0,ZMFBTU,Char,1.0,$ZVARCE.,Imputed major fuels consumption,"'0' = 'Reported'
-'1' = 'Estimated for strip center'
-'2' = 'Imputed'
-'3' = 'Estimated using price'
-'9' = 'Inapplicable'","{'0': 'Reported', '1': 'Estimated for strip center', '2': 'Imputed', '3': 'Estimated using price', '9': 'Inapplicable'}"
-10,1075.0,ZMFEXP,Char,1.0,$ZVARCE.,Imputed major fuels expenditures,"'0' = 'Reported'
-'1' = 'Estimated for strip center'
-'2' = 'Imputed'
-'3' = 'Estimated using price'
-'9' = 'Inapplicable'","{'0': 'Reported', '1': 'Estimated for strip center', '2': 'Imputed', '3': 'Estimated using price', '9': 'Inapplicable'}"
-10,1076.0,ZELCNS,Char,1.0,$ZVARCE.,Imputed electricity consumption,"'0' = 'Reported'
-'1' = 'Estimated for strip center'
-'2' = 'Imputed'
-'3' = 'Estimated using price'
-'9' = 'Inapplicable'","{'0': 'Reported', '1': 'Estimated for strip center', '2': 'Imputed', '3': 'Estimated using price', '9': 'Inapplicable'}"
-10,1077.0,ZELEXP,Char,1.0,$ZVARCE.,Imputed electricity expenditures,"'0' = 'Reported'
-'1' = 'Estimated for strip center'
-'2' = 'Imputed'
-'3' = 'Estimated using price'
-'9' = 'Inapplicable'","{'0': 'Reported', '1': 'Estimated for strip center', '2': 'Imputed', '3': 'Estimated using price', '9': 'Inapplicable'}"
-10,1078.0,ZNGCNS,Char,1.0,$ZVARCE.,Imputed natural gas consumption,"'0' = 'Reported'
-'1' = 'Estimated for strip center'
-'2' = 'Imputed'
-'3' = 'Estimated using price'
-'9' = 'Inapplicable'","{'0': 'Reported', '1': 'Estimated for strip center', '2': 'Imputed', '3': 'Estimated using price', '9': 'Inapplicable'}"
-10,1079.0,ZNGEXP,Char,1.0,$ZVARCE.,Imputed natural gas expenditures,"'0' = 'Reported'
-'1' = 'Estimated for strip center'
-'2' = 'Imputed'
-'3' = 'Estimated using price'
-'9' = 'Inapplicable'","{'0': 'Reported', '1': 'Estimated for strip center', '2': 'Imputed', '3': 'Estimated using price', '9': 'Inapplicable'}"
-10,1080.0,ZFKCNS,Char,1.0,$ZVARCE.,Imputed fuel oil consumption,"'0' = 'Reported'
-'1' = 'Estimated for strip center'
-'2' = 'Imputed'
-'3' = 'Estimated using price'
-'9' = 'Inapplicable'","{'0': 'Reported', '1': 'Estimated for strip center', '2': 'Imputed', '3': 'Estimated using price', '9': 'Inapplicable'}"
-10,1081.0,ZFKEXP,Char,1.0,$ZVARCE.,Imputed fuel oil expenditures,"'0' = 'Reported'
-'1' = 'Estimated for strip center'
-'2' = 'Imputed'
-'3' = 'Estimated using price'
-'9' = 'Inapplicable'","{'0': 'Reported', '1': 'Estimated for strip center', '2': 'Imputed', '3': 'Estimated using price', '9': 'Inapplicable'}"
-10,1082.0,ZDHCNS,Char,1.0,$ZVARCE.,Imputed district heat consumption,"'0' = 'Reported'
-'1' = 'Estimated for strip center'
-'2' = 'Imputed'
-'3' = 'Estimated using price'
-'9' = 'Inapplicable'","{'0': 'Reported', '1': 'Estimated for strip center', '2': 'Imputed', '3': 'Estimated using price', '9': 'Inapplicable'}"
-10,1083.0,ZDHEXP,Char,1.0,$ZVARCE.,Imputed district heat expenditures,"'0' = 'Reported'
-'1' = 'Estimated for strip center'
-'2' = 'Imputed'
-'3' = 'Estimated using price'
-'9' = 'Inapplicable'","{'0': 'Reported', '1': 'Estimated for strip center', '2': 'Imputed', '3': 'Estimated using price', '9': 'Inapplicable'}"
 10,1084.0,MFHTBTU,Num,8.0,,Major fuel heating use (thous Btu),,{'no code': 'continuous numerical value'}
 10,1085.0,MFCLBTU,Num,8.0,,Major fuel cooling use (thous Btu),,{'no code': 'continuous numerical value'}
 10,1086.0,MFVNBTU,Num,8.0,,Major fuel ventilation use (thous Btu),,{'no code': 'continuous numerical value'}
