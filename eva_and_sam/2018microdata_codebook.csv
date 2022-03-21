@@ -47,7 +47,8 @@ name",Variable type,Length,Label,Values/Format codes
 1,7,WLCNS,Num,8,Wall construction material,"1=Brick, stone, or stucco
 2=Pre-cast concrete panels
 3=Concrete block or poured concrete (above grade)
-4=Aluminum, asbestos, plastic, or wood materials (siding, shingles, tiles,5=Sheet metal panels
+4=Aluminum, asbestos, plastic, or wood materials (siding, shingles, tiles)
+5=Sheet metal panels
 6=Window or vision glass (glass that can be seen through)
 7=Decorative or construction glass (glass that cannot be seen through)
 8=Other"
@@ -191,9 +192,11 @@ Missing=Not applicable"
 26=Other public assembly 
 27=College/university 
 28=Elementary school 
-29=High school 30=Preschool/daycare 
+29=High school 
+30=Preschool/daycare 
 31=Other classroom education 
-32=Fast food 33=Restaurant/cafeteria 
+32=Fast food 
+33=Restaurant/cafeteria 
 34=Other food service 
 35=Hospital/inpatient health 
 36=Nursing home/assisted living 
@@ -1741,8 +1744,8 @@ Missing=Not applicable"
 2=Separate parking (lot or garage)
 3=Both types of parking areas
 Missing=Not applicable"
-7,556,PKLTN,Num,8,Vehicle parking capacity,"5=1 to 5
-6 - 12,000
+7,556,PKLTN,Num,8,Vehicle parking capacity,"6 - 12000
+5=1 to 5
 Missing=Not applicable"
 7,557,WINTYP,Num,8,Window glass type,"1=Single-layer glass
 2=Multi-layer glass
