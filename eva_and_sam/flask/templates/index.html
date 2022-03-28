@@ -1,0 +1,16 @@
+{% extends "_layout.html" %}
+{% block main_content %}
+    <h1>Hello World!</h1>
+    <h2>Charts</h2>
+    {% for c in charts %}
+        <div>
+            <span class="name">
+                {{ c.name }}
+            </span>
+            <span class="type">
+                {{ c.chart }}
+            </span>
+        </div>
+    {% endfor %}
+
+{% endblock %}
