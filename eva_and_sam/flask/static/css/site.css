@@ -4,6 +4,20 @@
 
 .main_content {
     padding: 20px;
+    margin: auto;
+}
+
+.chart_details{
+    padding: 10px;
+}
+
+.chart_content{
+    margin: auto;
+    margin-bottom: 20px;
+    width: 50%;
+    border: 3px solid grey;
+    padding: 20px;
+    text-align: center;
 }
 
 nav {
