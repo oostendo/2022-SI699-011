@@ -11,6 +11,16 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
 </head>
 <body>
+  {% extends "_layout.html" %}
+
+  {% block main_content %}
+  <h1>Cars</h1>
+  <p>This page shows scatter plots related to cars.</p>
+  {% endblock %}
+
+  {% block chart_content %}
+  <h2>MPG and Horsepower</h2>
+  <p>This plot shows the relationship between miles per gallon and horsepower for cars manufactured in various countries.</p>
   <div id="vis"></div>
   <script>
     (function(vegaEmbed) {
@@ -31,5 +41,7 @@
     })(vegaEmbed);
 
   </script>
+  {% endblock %}
+
 </body>
 </html>

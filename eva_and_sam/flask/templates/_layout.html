@@ -19,13 +19,23 @@
     <body>
         <nav>
             <a href="/">Home</a>
-            <a href="/about">About</a>
+            <!--<a href="/about">About</a>-->
             <a href="/scatter">Scatter Plot</a>
-            <a href="/table">Data Tables</a>
+            <!--<a href="/table">Data Tables</a>-->
         </nav>
         <!--{% block nav_content %} {% endblock %}-->
         <div class="main_content">
             {% block main_content %} {% endblock %}
+        </div>
+
+        <!--
+        <div class="chart_details">
+            {% block chart_details %} {% endblock %}
+        </div>
+        -->
+
+        <div class="chart_content">
+            {% block chart_content %} {% endblock %}
         </div>
     </body>
 </html>
