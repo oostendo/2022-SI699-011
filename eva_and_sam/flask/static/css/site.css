@@ -1,0 +1,33 @@
+.title {
+    font-weight: bold;
+}
+
+.main_content {
+    padding: 20px;
+    margin: auto;
+}
+
+.chart_details{
+    padding: 10px;
+}
+
+.chart_content{
+    margin: auto;
+    margin-bottom: 50px;
+    width: 50%;
+    border: 3px solid grey;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #000;
+    padding: 10px;
+    font-size: 20px;
+
+}
+
+nav > a {
+    color: white;
+    margin-right: 10px;
+}

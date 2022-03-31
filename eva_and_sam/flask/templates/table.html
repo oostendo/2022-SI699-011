@@ -1,0 +1,10 @@
+{% extends "_plotlayout.html" %}
+{% block chart_content %}
+    <h1>Hello World Data Table!</h1>
+    <div>
+        This is an example of a data table.
+        {% for table in tables %}
+            {{ table|safe }}
+        {% endfor %}
+    </div>
+{% endblock %}
