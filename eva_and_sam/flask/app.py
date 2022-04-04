@@ -46,4 +46,4 @@ def charts():
 #     return flask.render_template('table.html',  tables=[df.to_html(classes='data', index=False)], titles=df.columns.values)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(port=5000, debug=True)
