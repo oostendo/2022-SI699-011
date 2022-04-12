@@ -1,0 +1,1121 @@
+category,col_name
+0,PUBID
+0,REGION
+0,CENDIV
+0,PBA
+1,FREESTN
+1,SQFT
+1,SQFTC
+1,WLCNS
+1,RFCNS
+1,RFCOOL
+1,RFTILT
+1,BLDSHP
+1,GLSSPC
+1,EQGLSS
+1,SUNGLS
+1,NFLOOR
+1,BASEMNT
+1,FLCEILHT
+1,ATTIC
+1,ELEVTR
+1,NELVTR
+1,ESCLTR
+1,NESLTR
+1,YRCON
+1,YRCONC
+1,MONCON
+1,RENOV
+1,RENADD
+1,RENRDC
+1,RENCOS
+1,RENINT
+1,RENRFF
+1,RENWLL
+1,RENWIN
+1,RENHVC
+1,RENLGT
+1,RENPLB
+1,RENELC
+1,RENINS
+1,RENSAF
+1,RENSTR
+1,RENOTH
+1,ONEACT
+1,ACT1
+1,ACT2
+1,ACT3
+1,ACT1PCT
+1,ACT2PCT
+1,ACT3PCT
+1,PBAPLUS
+1,
+1,DRYCL
+1,VACANT
+1,CUBE
+1,CUBEC
+1,CUBELOC
+1,RWSEAT
+1,PBSEAT
+1,EDSEAT
+1,FDSEAT
+1,HCBED
+1,NRSBED
+1,LODGRM
+1,COURT
+1,FACIL
+1,FEDFAC
+1,FACACT
+1,MANIND
+1,PLANT
+1,FACDST
+1,FACDHW
+1,FACDCW
+1,FACELC
+1,BLDPLT
+2,GOVOWN
+2,GOVTYP
+2,OWNTYPE
+2,NOCC
+2,NOCCAT
+2,OWNOCC
+2,OWNOPR
+2,OWNPPR
+2,NWNPPR
+2,NWNOPR
+2,WHOPPR
+3,MONUSE
+3,OCCUPYP
+3,LODOCCP
+3,OPEN24
+3,OPNMF
+3,OPNWE
+3,WKHRS
+3,WKHRSC
+3,NWKER
+3,NWKERC
+4,HT1
+4,HT2
+4,COOL
+4,WATR
+4,COOK
+4,MANU
+4,CAPGEN
+4,GENR
+4,ANYEGY
+4,ELUSED
+4,NGUSED
+4,FKUSED
+4,FKTYPE
+4,PRUSED
+4,STUSED
+4,HWUSED
+4,CWUSED
+4,WOUSED
+4,COUSED
+4,SOUSED
+4,OTUSED
+4,ELHT1
+4,NGHT1
+4,FKHT1
+4,PRHT1
+4,STHT1
+4,HWHT1
+4,WOHT1
+4,COHT1
+4,SOHT1
+4,OTHT1
+4,ELHT2
+4,NGHT2
+4,FKHT2
+4,PRHT2
+4,STHT2
+4,HWHT2
+4,WOHT2
+4,COHT2
+4,SOHT2
+4,OTHT2
+4,HEATP
+4,HTLS50
+4,FURNAC
+4,PKGHT
+4,BOILER
+4,STHW
+4,HTPMPH
+4,SLFCON
+4,OTHTEQ
+4,FURNP
+4,PKGHP
+4,BOILP
+4,STHWP
+4,HTPHP
+4,SLFCNP
+4,OTHTP
+4,MAINHT
+4,NWMNHT
+4,PKGHTTYP
+4,PKGFURN
+4,PKGHTP
+4,PKGCOIL
+4,PKGPIU
+4,PKGDUCT
+4,BLRRAD
+4,BLRFNCL
+4,BLRINDC
+4,BLRLOOP
+4,BLRAIR
+4,BLRPKG
+4,BLRDUCT
+4,DHRAD
+4,DHFNCL
+4,DHINDC
+4,DHLOOP
+4,DHAIR
+4,DHPKG
+4,DHDUCT
+4,HPHPKG
+4,HPHSPLT
+4,HPHROOM
+4,HPHMINI
+4,HPHVRF
+4,HPHAIR
+4,HPHGRD
+4,HPHDUAL
+4,HPHWTR
+4,HPHBKUP
+4,SHRDNT
+4,SHBBRD
+4,SHPORT
+4,SHWALL
+4,SHFURN
+4,SHUNIT
+4,SHPTAC
+4,OTSTRP
+4,OTDUCT
+4,OTPIU
+4,HTVCAV
+4,HTVVAV
+4,HTVFLR
+4,HTVOAS
+4,HTVDEM
+4,HTVNON
+4,ELCOOL
+4,NGCOOL
+4,FKCOOL
+4,PRCOOL
+4,STCOOL
+4,HWCOOL
+4,CWCOOL
+4,OTCOOL
+4,COOLP
+4,RCAC
+4,PKGCL
+4,CHILLR
+4,CHWT
+4,HTPMPC
+4,ACWNWL
+4,EVAPCL
+4,OTCLEQ
+4,RCACP
+4,PKGCP
+4,CHILP
+4,CHWTP
+4,HTPCP
+4,ACWNWP
+4,EVAPP
+4,OTCLP
+4,MAINCL
+4,NWMNCL
+4,PKGCLTYP
+4,CHLAIRCL
+4,CHLWTRCL
+4,CHLABSRP
+4,HTRCHLR
+4,CHLAIR
+4,CHLFNCL
+4,CHLINDC
+4,CHLLOOP
+4,CHLBEAM
+4,CHLPKG
+4,CHLDUCT
+4,DCWAIR
+4,DCWFNCL
+4,DCWINDC
+4,DCWLOOP
+4,DCWBEAM
+4,DCWPKG
+4,DCWDUCT
+4,HPCPKG
+4,HPCSPLT
+4,HPCROOM
+4,HPCMINI
+4,HPCVRF
+4,HPCAIR
+4,HPCGRD
+4,HPCDUAL
+4,HPCWTR
+4,CLVCAV
+4,CLVVAV
+4,CLVFLR
+4,CLVOAS
+4,CLVDEM
+4,CLVNON
+4,EMCS
+4,RDHTNF
+4,HWRDHT
+4,RDCLNF
+4,HWRDCL
+4,ECN
+4,ECNTYPE
+4,MAINT
+4,ELWATR
+4,NGWATR
+4,FKWATR
+4,PRWATR
+4,STWATR
+4,HWWATR
+4,WOWATR
+4,COWATR
+4,SOWATR
+4,OTWATR
+4,WTHTEQ
+4,BOOSTWT
+4,INSTWT
+4,ELCOOK
+4,NGCOOK
+4,FKCOOK
+4,PRCOOK
+4,STCOOK
+4,HWCOOK
+4,WOCOOK
+4,COCOOK
+4,SOCOOK
+4,OTCOOK
+4,ELMANU
+4,NGMANU
+4,FKMANU
+4,PRMANU
+4,STMANU
+4,HWMANU
+4,WOMANU
+4,COMANU
+4,SOMANU
+4,OTMANU
+4,NGGENR
+4,FKGENR
+4,PRGENR
+4,WOGENR
+4,COGENR
+4,SOGENR
+4,OTGENR
+4,PVC
+4,FUELCL
+4,LRGTRB
+4,MCROTB
+4,ENGINE
+4,GENUSE
+4,COGEN
+4,TOGRID
+4,NGOTH
+4,FKOTH
+4,PROTH
+4,STOTH
+4,HWOTH
+4,CWOTH
+4,WOOTH
+4,COOTH
+4,SOOTH
+4,OTOTH
+4,ELLOCUT
+4,ELNONLU
+4,ELOTSRC
+4,ELCPLT
+4,ELLUPCT
+4,NGSRC
+4,PRAMTC
+4,PRUNIT
+4,WOAMT
+4,WOSRC
+4,WOEXP
+4,WOEXPC
+5,AMIMETER
+5,ENRGYPLN
+6,SNACK
+6,FASTFD
+6,CAF
+6,FDPREP
+6,KITCHN
+6,BREAKRM
+6,OTFDRM
+6,HWTRM
+6,LAUNDR
+6,CONFSP
+6,CONFSPP
+6,MEDEQP
+6,XRAYN
+6,CTSCAN
+6,MRI
+6,LINACC
+6,OUTSURG
+6,LABEQP
+6,MCHEQP
+6,POOL
+6,HTPOOL
+6,POOLSRC
+6,STRLZR
+6,RFGEQP
+6,RFGRES
+6,RFGCOMP
+6,RFGWI
+6,RFGOP
+6,RFGCL
+6,RFGVEN
+6,RFGICE
+6,RFGSTO
+6,RFGRSN
+6,RFGCOMPN
+6,RFGWIN
+6,RFGOPN
+6,RFGCLN
+6,RFGVNN
+6,RFGICN
+6,RFGSTP
+6,WHRECOV
+6,WHHT2
+6,WHWT
+6,WHOT
+6,PCTERM
+6,PCTERMN
+6,PCTRMC
+6,MLTMON
+6,MLTMNC
+6,FLATC
+6,LAPTPN
+6,LAPTPC
+6,PRNTRN
+6,PRNTYP
+6,SERVER
+6,SERVERN
+6,SERVERC
+6,DATACNTR
+6,DCNTRSFC
+6,TRNGRM
+6,STDNRM
+6,WBOARDS
+6,TVVIDEO
+6,TVVIDEON
+6,RGSTR
+6,RGSTRN
+6,COPIER
+6,COPIERN
+6,FAX
+7,LTOHRP
+7,LOHRPC
+7,LTNR24
+7,LTNHRP
+7,LNHRPC
+7,RDLTNF
+7,FLUOR
+7,CFLR
+7,BULB
+7,HALO
+7,HID
+7,LED
+7,OTLT
+7,FLUORP
+7,CFLRP
+7,BULBP
+7,HALOP
+7,HIDP
+7,LEDP
+7,OTLTP
+7,EMCSLT
+7,SCHED
+7,OCSN
+7,DIM
+7,DAYHARV
+7,TRIM
+7,PLGCTRL
+7,DRLGHT
+7,LTEXPC
+7,PKLT
+7,WINTYP
+7,TINT
+7,REFL
+7,AWN
+7,SKYLT
+7,DAYLTP
+10,HDD65
+10,CDD65
+10,MFUSED
+10,DHUSED
+10,DHHT1
+10,DHHT2
+10,DHCOOL
+10,DHCOOK
+10,DHWATR
+10,DHMANU
+10,DHOTH
+10,MFHTBTU
+10,MFCLBTU
+10,MFVNBTU
+10,MFWTBTU
+10,MFLTBTU
+10,MFCKBTU
+10,MFRFBTU
+10,MFOFBTU
+10,MFPCBTU
+10,MFOTBTU
+10,ELHTBTU
+10,ELCLBTU
+10,ELVNBTU
+10,ELWTBTU
+10,ELLTBTU
+10,ELCKBTU
+10,ELRFBTU
+10,ELOFBTU
+10,ELPCBTU
+10,ELOTBTU
+10,NGHTBTU
+10,NGCLBTU
+10,NGWTBTU
+10,NGCKBTU
+10,NGOTBTU
+10,FKHTBTU
+10,FKCLBTU
+10,FKWTBTU
+10,FKCKBTU
+10,FKOTBTU
+10,DHHTBTU
+10,DHCLBTU
+10,DHWTBTU
+10,DHCKBTU
+10,DHOTBTU
+10,PUBCLIM
+get rid of,ZSQFT
+get rid of,ZSQFTC
+get rid of,ZWLCNS
+get rid of,ZRFCNS
+get rid of,ZRFCOOL
+get rid of,ZRFTILT
+get rid of,ZBLDSHP
+get rid of,ZGLSSPC
+get rid of,ZEQGLSS
+get rid of,ZSUNGLS
+get rid of,ZNFLOOR
+get rid of,ZBASEMNT
+get rid of,ZFLCEILHT
+get rid of,ZATTIC
+get rid of,ZELEVTR
+get rid of,ZNELVTR
+get rid of,ZESCLTR
+get rid of,ZNESLTR
+get rid of,ZYRCON
+get rid of,ZYRCONC
+get rid of,ZRENOV
+get rid of,ZRENADD
+get rid of,ZRENRDC
+get rid of,ZRENCOS
+get rid of,ZRENINT
+get rid of,ZRENRFF
+get rid of,ZRENWLL
+get rid of,ZRENWIN
+get rid of,ZRENHVC
+get rid of,ZRENLGT
+get rid of,ZRENPLB
+get rid of,ZRENELC
+get rid of,ZRENINS
+get rid of,ZRENSAF
+get rid of,ZRENSTR
+get rid of,ZRENOTH
+get rid of,ZDRYCL
+get rid of,ZCUBE
+get rid of,ZCUBEC
+get rid of,ZCUBELOC
+get rid of,ZRWSEAT
+get rid of,ZPBSEAT
+get rid of,ZEDSEAT
+get rid of,ZFDSEAT
+get rid of,ZHCBED
+get rid of,ZNRSBED
+get rid of,ZLODGRM
+get rid of,ZFACIL
+get rid of,ZFEDFAC
+get rid of,ZFACACT
+get rid of,ZPLANT
+get rid of,ZFACDST
+get rid of,ZFACDHW
+get rid of,ZFACDCW
+get rid of,ZFACELC
+get rid of,ZBLDPLT
+get rid of,ZGOVOWN
+get rid of,ZGOVTYP
+get rid of,ZOWNTYPE
+get rid of,ZNOCC
+get rid of,ZNOCCAT
+get rid of,ZOWNOCC
+get rid of,ZOWNOPR
+get rid of,ZOWNPPR
+get rid of,ZNWNPPR
+get rid of,ZNWNOPR
+get rid of,ZWHOPPR
+get rid of,ZMONUSE
+get rid of,ZOCCUPYP
+get rid of,ZLODOCCP
+get rid of,ZOPEN24
+get rid of,ZOPNMF
+get rid of,ZOPNWE
+get rid of,ZWKHRS
+get rid of,ZWKHRSC
+get rid of,ZNWKER
+get rid of,ZNWKERC
+get rid of,ZHT1
+get rid of,ZHT2
+get rid of,ZCOOL
+get rid of,ZWATR
+get rid of,ZCOOK
+get rid of,ZMANU
+get rid of,ZCAPGEN
+get rid of,ZGENR
+get rid of,ZELUSED
+get rid of,ZNGUSED
+get rid of,ZFKUSED
+get rid of,ZPRUSED
+get rid of,ZSTUSED
+get rid of,ZHWUSED
+get rid of,ZCWUSED
+get rid of,ZWOUSED
+get rid of,ZCOUSED
+get rid of,ZSOUSED
+get rid of,ZOTUSED
+get rid of,ZELHT1
+get rid of,ZNGHT1
+get rid of,ZFKHT1
+get rid of,ZPRHT1
+get rid of,ZSTHT1
+get rid of,ZHWHT1
+get rid of,ZWOHT1
+get rid of,ZCOHT1
+get rid of,ZSOHT1
+get rid of,ZOTHT1
+get rid of,ZELHT2
+get rid of,ZNGHT2
+get rid of,ZFKHT2
+get rid of,ZPRHT2
+get rid of,ZSTHT2
+get rid of,ZHWHT2
+get rid of,ZWOHT2
+get rid of,ZCOHT2
+get rid of,ZSOHT2
+get rid of,ZOTHT2
+get rid of,ZHEATP
+get rid of,ZHTLS50
+get rid of,ZFURNAC
+get rid of,ZPKGHT
+get rid of,ZBOILER
+get rid of,ZSTHW
+get rid of,ZHTPMPH
+get rid of,ZSLFCON
+get rid of,ZOTHTEQ
+get rid of,ZFURNP
+get rid of,ZPKGHP
+get rid of,ZBOILP
+get rid of,ZSTHWP
+get rid of,ZHTPHP
+get rid of,ZSLFCNP
+get rid of,ZOTHTP
+get rid of,ZMAINHT
+get rid of,ZNWMNHT
+get rid of,ZPKGHTTYP
+get rid of,ZPKGFURN
+get rid of,ZPKGHTP
+get rid of,ZPKGCOIL
+get rid of,ZPKGPIU
+get rid of,ZPKGDUCT
+get rid of,ZBLRRAD
+get rid of,ZBLRFNCL
+get rid of,ZBLRINDC
+get rid of,ZBLRLOOP
+get rid of,ZBLRAIR
+get rid of,ZBLRPKG
+get rid of,ZBLRDUCT
+get rid of,ZDHRAD
+get rid of,ZDHFNCL
+get rid of,ZDHINDC
+get rid of,ZDHLOOP
+get rid of,ZDHAIR
+get rid of,ZDHPKG
+get rid of,ZDHDUCT
+get rid of,ZHPHPKG
+get rid of,ZHPHSPLT
+get rid of,ZHPHROOM
+get rid of,ZHPHMINI
+get rid of,ZHPHVRF
+get rid of,ZHPHAIR
+get rid of,ZHPHGRD
+get rid of,ZHPHDUAL
+get rid of,ZHPHWTR
+get rid of,ZHPHBKUP
+get rid of,ZSHRDNT
+get rid of,ZSHBBRD
+get rid of,ZSHPORT
+get rid of,ZSHWALL
+get rid of,ZSHFURN
+get rid of,ZSHUNIT
+get rid of,ZSHPTAC
+get rid of,ZHTVCAV
+get rid of,ZHTVVAV
+get rid of,ZHTVFLR
+get rid of,ZHTVOAS
+get rid of,ZHTVDEM
+get rid of,ZHTVNON
+get rid of,ZELCOOL
+get rid of,ZNGCOOL
+get rid of,ZFKCOOL
+get rid of,ZPRCOOL
+get rid of,ZSTCOOL
+get rid of,ZHWCOOL
+get rid of,ZCWCOOL
+get rid of,ZOTCOOL
+get rid of,ZCOOLP
+get rid of,ZRCAC
+get rid of,ZPKGCL
+get rid of,ZCHILLR
+get rid of,ZCHWT
+get rid of,ZHTPMPC
+get rid of,ZACWNWL
+get rid of,ZEVAPCL
+get rid of,ZOTCLEQ
+get rid of,ZRCACP
+get rid of,ZPKGCP
+get rid of,ZCHILP
+get rid of,ZCHWTP
+get rid of,ZHTPCP
+get rid of,ZACWNWP
+get rid of,ZEVAPP
+get rid of,ZOTCLP
+get rid of,ZMAINCL
+get rid of,ZNWMNCL
+get rid of,ZPKGCLTYP
+get rid of,ZCHLAIRCL
+get rid of,ZCHLWTRCL
+get rid of,ZCHLABSRP
+get rid of,ZHTRCHLR
+get rid of,ZCHLAIR
+get rid of,ZCHLFNCL
+get rid of,ZCHLINDC
+get rid of,ZCHLLOOP
+get rid of,ZCHLBEAM
+get rid of,ZCHLPKG
+get rid of,ZCHLDUCT
+get rid of,ZDCWAIR
+get rid of,ZDCWFNCL
+get rid of,ZDCWINDC
+get rid of,ZDCWLOOP
+get rid of,ZDCWBEAM
+get rid of,ZDCWPKG
+get rid of,ZDCWDUCT
+get rid of,ZHPCPKG
+get rid of,ZHPCSPLT
+get rid of,ZHPCROOM
+get rid of,ZHPCMINI
+get rid of,ZHPCVRF
+get rid of,ZHPCAIR
+get rid of,ZHPCGRD
+get rid of,ZHPCDUAL
+get rid of,ZHPCWTR
+get rid of,ZCLVCAV
+get rid of,ZCLVVAV
+get rid of,ZCLVFLR
+get rid of,ZCLVOAS
+get rid of,ZCLVDEM
+get rid of,ZCLVNON
+get rid of,ZEMCS
+get rid of,ZRDHTNF
+get rid of,ZHWRDHT
+get rid of,ZRDCLNF
+get rid of,ZHWRDCL
+get rid of,ZECN
+get rid of,ZECNTYPE
+get rid of,ZMAINT
+get rid of,ZELWATR
+get rid of,ZNGWATR
+get rid of,ZFKWATR
+get rid of,ZPRWATR
+get rid of,ZSTWATR
+get rid of,ZHWWATR
+get rid of,ZWOWATR
+get rid of,ZCOWATR
+get rid of,ZSOWATR
+get rid of,ZOTWATR
+get rid of,ZWTHTEQ
+get rid of,ZBOOSTWT
+get rid of,ZINSTWT
+get rid of,ZELCOOK
+get rid of,ZNGCOOK
+get rid of,ZFKCOOK
+get rid of,ZPRCOOK
+get rid of,ZSTCOOK
+get rid of,ZHWCOOK
+get rid of,ZWOCOOK
+get rid of,ZCOCOOK
+get rid of,ZSOCOOK
+get rid of,ZOTCOOK
+get rid of,ZELMANU
+get rid of,ZNGMANU
+get rid of,ZFKMANU
+get rid of,ZPRMANU
+get rid of,ZSTMANU
+get rid of,ZHWMANU
+get rid of,ZWOMANU
+get rid of,ZCOMANU
+get rid of,ZSOMANU
+get rid of,ZOTMANU
+get rid of,ZNGGENR
+get rid of,ZFKGENR
+get rid of,ZPRGENR
+get rid of,ZWOGENR
+get rid of,ZCOGENR
+get rid of,ZSOGENR
+get rid of,ZOTGENR
+get rid of,ZPVC
+get rid of,ZFUELCL
+get rid of,ZLRGTRB
+get rid of,ZMCROTB
+get rid of,ZENGINE
+get rid of,ZGENUSE
+get rid of,ZCOGEN
+get rid of,ZTOGRID
+get rid of,ZPRAMTC
+get rid of,ZWOAMT
+get rid of,ZWOSRC
+get rid of,ZWOEXP
+get rid of,ZWOEXPC
+get rid of,ZENRGYPLN
+get rid of,ZSNACK
+get rid of,ZFASTFD
+get rid of,ZCAF
+get rid of,ZFDPREP
+get rid of,ZKITCHN
+get rid of,ZBREAKRM
+get rid of,ZOTFDRM
+get rid of,ZHWTRM
+get rid of,ZLAUNDR
+get rid of,ZCONFSP
+get rid of,ZCONFSPP
+get rid of,ZMEDEQP
+get rid of,ZXRAYN
+get rid of,ZCTSCAN
+get rid of,ZMRI
+get rid of,ZLINACC
+get rid of,ZOUTSURG
+get rid of,ZLABEQP
+get rid of,ZMCHEQP
+get rid of,ZPOOL
+get rid of,ZHTPOOL
+get rid of,ZPOOLSRC
+get rid of,ZSTRLZR
+get rid of,ZRFGEQP
+get rid of,ZRFGRES
+get rid of,ZRFGCOMP
+get rid of,ZRFGWI
+get rid of,ZRFGOP
+get rid of,ZRFGCL
+get rid of,ZRFGVEN
+get rid of,ZRFGICE
+get rid of,ZRFGSTO
+get rid of,ZRFGRSN
+get rid of,ZRFGCOMPN
+get rid of,ZRFGWIN
+get rid of,ZRFGOPN
+get rid of,ZRFGCLN
+get rid of,ZRFGVNN
+get rid of,ZRFGICN
+get rid of,ZRFGSTP
+get rid of,ZWHRECOV
+get rid of,ZWHHT2
+get rid of,ZWHWT
+get rid of,ZWHOT
+get rid of,ZPCTERM
+get rid of,ZPCTERMN
+get rid of,ZPCTRMC
+get rid of,ZMLTMON
+get rid of,ZMLTMNC
+get rid of,ZFLATC
+get rid of,ZLAPTPN
+get rid of,ZLAPTPC
+get rid of,ZPRNTRN
+get rid of,ZPRNTYP
+get rid of,ZSERVER
+get rid of,ZSERVERN
+get rid of,ZSERVERC
+get rid of,ZDATACNTR
+get rid of,ZDCNTRSFC
+get rid of,ZTRNGRM
+get rid of,ZSTDNRM
+get rid of,ZWBOARDS
+get rid of,ZTVVIDEO
+get rid of,ZTVVIDEON
+get rid of,ZRGSTR
+get rid of,ZRGSTRN
+get rid of,ZCOPIER
+get rid of,ZCOPIERN
+get rid of,ZFAX
+get rid of,ZLTOHRP
+get rid of,ZLOHRPC
+get rid of,ZLTNR24
+get rid of,ZLTNHRP
+get rid of,ZLNHRPC
+get rid of,ZRDLTNF
+get rid of,ZFLUOR
+get rid of,ZCFLR
+get rid of,ZBULB
+get rid of,ZHALO
+get rid of,ZHID
+get rid of,ZLED
+get rid of,ZOTLT
+get rid of,ZFLUORP
+get rid of,ZCFLRP
+get rid of,ZBULBP
+get rid of,ZHALOP
+get rid of,ZHIDP
+get rid of,ZLEDP
+get rid of,ZOTLTP
+get rid of,ZEMCSLT
+get rid of,ZSCHED
+get rid of,ZOCSN
+get rid of,ZDIM
+get rid of,ZDAYHARV
+get rid of,ZTRIM
+get rid of,ZPLGCTRL
+get rid of,ZDRLGHT
+get rid of,ZLTEXPC
+get rid of,ZPKLT
+get rid of,ZWINTYP
+get rid of,ZTINT
+get rid of,ZREFL
+get rid of,ZAWN
+get rid of,ZSKYLT
+get rid of,ZDAYLTP
+get rid of,FINALWT
+get rid of,FINALWT1
+get rid of,FINALWT2
+get rid of,FINALWT3
+get rid of,FINALWT4
+get rid of,FINALWT5
+get rid of,FINALWT6
+get rid of,FINALWT7
+get rid of,FINALWT8
+get rid of,FINALWT9
+get rid of,FINALWT10
+get rid of,FINALWT11
+get rid of,FINALWT12
+get rid of,FINALWT13
+get rid of,FINALWT14
+get rid of,FINALWT15
+get rid of,FINALWT16
+get rid of,FINALWT17
+get rid of,FINALWT18
+get rid of,FINALWT19
+get rid of,FINALWT20
+get rid of,FINALWT21
+get rid of,FINALWT22
+get rid of,FINALWT23
+get rid of,FINALWT24
+get rid of,FINALWT25
+get rid of,FINALWT26
+get rid of,FINALWT27
+get rid of,FINALWT28
+get rid of,FINALWT29
+get rid of,FINALWT30
+get rid of,FINALWT31
+get rid of,FINALWT32
+get rid of,FINALWT33
+get rid of,FINALWT34
+get rid of,FINALWT35
+get rid of,FINALWT36
+get rid of,FINALWT37
+get rid of,FINALWT38
+get rid of,FINALWT39
+get rid of,FINALWT40
+get rid of,FINALWT41
+get rid of,FINALWT42
+get rid of,FINALWT43
+get rid of,FINALWT44
+get rid of,FINALWT45
+get rid of,FINALWT46
+get rid of,FINALWT47
+get rid of,FINALWT48
+get rid of,FINALWT49
+get rid of,FINALWT50
+get rid of,FINALWT51
+get rid of,FINALWT52
+get rid of,FINALWT53
+get rid of,FINALWT54
+get rid of,FINALWT55
+get rid of,FINALWT56
+get rid of,FINALWT57
+get rid of,FINALWT58
+get rid of,FINALWT59
+get rid of,FINALWT60
+get rid of,FINALWT61
+get rid of,FINALWT62
+get rid of,FINALWT63
+get rid of,FINALWT64
+get rid of,FINALWT65
+get rid of,FINALWT66
+get rid of,FINALWT67
+get rid of,FINALWT68
+get rid of,FINALWT69
+get rid of,FINALWT70
+get rid of,FINALWT71
+get rid of,FINALWT72
+get rid of,FINALWT73
+get rid of,FINALWT74
+get rid of,FINALWT75
+get rid of,FINALWT76
+get rid of,FINALWT77
+get rid of,FINALWT78
+get rid of,FINALWT79
+get rid of,FINALWT80
+get rid of,FINALWT81
+get rid of,FINALWT82
+get rid of,FINALWT83
+get rid of,FINALWT84
+get rid of,FINALWT85
+get rid of,FINALWT86
+get rid of,FINALWT87
+get rid of,FINALWT88
+get rid of,FINALWT89
+get rid of,FINALWT90
+get rid of,FINALWT91
+get rid of,FINALWT92
+get rid of,FINALWT93
+get rid of,FINALWT94
+get rid of,FINALWT95
+get rid of,FINALWT96
+get rid of,FINALWT97
+get rid of,FINALWT98
+get rid of,FINALWT99
+get rid of,FINALWT100
+get rid of,FINALWT101
+get rid of,FINALWT102
+get rid of,FINALWT103
+get rid of,FINALWT104
+get rid of,FINALWT105
+get rid of,FINALWT106
+get rid of,FINALWT107
+get rid of,FINALWT108
+get rid of,FINALWT109
+get rid of,FINALWT110
+get rid of,FINALWT111
+get rid of,FINALWT112
+get rid of,FINALWT113
+get rid of,FINALWT114
+get rid of,FINALWT115
+get rid of,FINALWT116
+get rid of,FINALWT117
+get rid of,FINALWT118
+get rid of,FINALWT119
+get rid of,FINALWT120
+get rid of,FINALWT121
+get rid of,FINALWT122
+get rid of,FINALWT123
+get rid of,FINALWT124
+get rid of,FINALWT125
+get rid of,FINALWT126
+get rid of,FINALWT127
+get rid of,FINALWT128
+get rid of,FINALWT129
+get rid of,FINALWT130
+get rid of,FINALWT131
+get rid of,FINALWT132
+get rid of,FINALWT133
+get rid of,FINALWT134
+get rid of,FINALWT135
+get rid of,FINALWT136
+get rid of,FINALWT137
+get rid of,FINALWT138
+get rid of,FINALWT139
+get rid of,FINALWT140
+get rid of,FINALWT141
+get rid of,FINALWT142
+get rid of,FINALWT143
+get rid of,FINALWT144
+get rid of,FINALWT145
+get rid of,FINALWT146
+get rid of,FINALWT147
+get rid of,FINALWT148
+get rid of,FINALWT149
+get rid of,FINALWT150
+get rid of,FINALWT151
+get rid of,FINALWT152
+get rid of,FINALWT153
+get rid of,FINALWT154
+get rid of,FINALWT155
+get rid of,FINALWT156
+get rid of,FINALWT157
+get rid of,FINALWT158
+get rid of,FINALWT159
+get rid of,FINALWT160
+get rid of,FINALWT161
+get rid of,FINALWT162
+get rid of,FINALWT163
+get rid of,FINALWT164
+get rid of,FINALWT165
+get rid of,FINALWT166
+get rid of,FINALWT167
+get rid of,FINALWT168
+get rid of,FINALWT169
+get rid of,FINALWT170
+get rid of,FINALWT171
+get rid of,FINALWT172
+get rid of,FINALWT173
+get rid of,FINALWT174
+get rid of,FINALWT175
+get rid of,FINALWT176
+get rid of,FINALWT177
+get rid of,FINALWT178
+get rid of,FINALWT179
+get rid of,FINALWT180
+get rid of,FINALWT181
+get rid of,FINALWT182
+get rid of,FINALWT183
+get rid of,FINALWT184
+get rid of,FINALWT185
+get rid of,FINALWT186
+get rid of,FINALWT187
+get rid of,FINALWT188
+get rid of,FINALWT189
+get rid of,FINALWT190
+get rid of,FINALWT191
+get rid of,FINALWT192
+get rid of,FINALWT193
+get rid of,FINALWT194
+get rid of,FINALWT195
+get rid of,FINALWT196
+get rid of,FINALWT197
+get rid of,MFBTU
+get rid of,MFEXP
+get rid of,ELCNS
+get rid of,ELBTU
+get rid of,ELEXP
+get rid of,NGCNS
+get rid of,NGBTU
+get rid of,NGEXP
+get rid of,FKCNS
+get rid of,FKBTU
+get rid of,FKEXP
+get rid of,DHCNS
+get rid of,DHBTU
+get rid of,DHEXP
+get rid of,ZMFBTU
+get rid of,ZMFEXP
+get rid of,ZELCNS
+get rid of,ZELEXP
+get rid of,ZNGCNS
+get rid of,ZNGEXP
+get rid of,ZFKCNS
+get rid of,ZFKEXP
+get rid of,ZDHCNS
+get rid of,ZDHEXP
