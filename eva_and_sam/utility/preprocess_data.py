@@ -79,8 +79,8 @@ for year in YEARS:
     updated_codebook = create_new_codebook(df_codebook, list(df.columns))
     replace_map = create_replace_map(updated_codebook, df, return_errors=False)
     df_filled = df.replace(to_replace=replace_map, value=0).fillna(value=0)
-    print(f'Data Sample: {year}\n{df_filled[:5].sample(5, random_state=5)}')
+    #print(f'Data Sample: {year}\n{df_filled[:5].sample(5, random_state=5)}')
     processed_dfs[year] = df_filled
 
-processed_dfs[2012].to_csv(PROCESSED_DATA_PATH+str(year)+'_train_'+DATA_PATH_ENDPOINT, index=False)
-processed_dfs[2018].to_csv(PROCESSED_DATA_PATH+str(year)+'_test_'+DATA_PATH_ENDPOINT, index=False)
+processed_dfs[2012].to_csv(PROCESSED_DATA_PATH+'2012_train_'+DATA_PATH_ENDPOINT, index=False)
+processed_dfs[2018].to_csv(PROCESSED_DATA_PATH+'2018_test_'+DATA_PATH_ENDPOINT, index=False)
