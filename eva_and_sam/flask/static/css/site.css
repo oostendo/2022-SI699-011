@@ -3,8 +3,10 @@
 }
 
 .main_content {
-    padding: 20px;
     margin: auto;
+    width: 50%;
+    padding: 20px;
+    text-align: left;
 }
 
 .chart_details{

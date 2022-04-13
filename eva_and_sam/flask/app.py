@@ -5,15 +5,6 @@ import pandas as pd
 
 app = flask.Flask(__name__)
 
-source = data.cars()
-scatter_plot = alt.Chart(source).mark_circle(size=60).encode(
-    x='Horsepower',
-    y='Miles_per_Gallon',
-    color='Origin',
-    tooltip=['Name', 'Origin', 'Horsepower', 'Miles_per_Gallon']
-).interactive()
-#scatter_plot.save('templates/scatter_plot.html')
-
 df = pd.DataFrame({'A': [0, 1, 2, 3, 4],
                    'B': [5, 6, 7, 8, 9],
                    'C': ['a', 'b', 'c--', 'd', 'e']})
@@ -37,9 +28,9 @@ def index():
 # def about():
 #     return flask.render_template('about.html')
 
-@app.route('/scatter')
+@app.route('/pca')
 def charts():
-    return flask.render_template('scatter_plot_test.html')
+    return flask.render_template('pca.html')
 
 # @app.route('/table')
 # def html_table():

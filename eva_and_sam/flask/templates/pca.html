@@ -1,0 +1,13 @@
+{% extends "_layout.html" %}
+{% block main_content %}
+    <h1>Principal Components Analysis</h1>
+    <div>
+        Plotted below are the first two principal components.
+    </div>
+{% endblock %}
+
+{% block chart_content %}
+    <div class = plot>
+        {% include 'plots/PCA_scatter_plot.html' %}
+    </div>
+{% endblock %}

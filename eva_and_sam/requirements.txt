@@ -5,3 +5,5 @@ matplotlib
 numpy
 sklearn
 json
+altair
+vega_datasets
