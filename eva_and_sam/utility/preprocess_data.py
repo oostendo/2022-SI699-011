@@ -1,3 +1,4 @@
+import os
 import json
 import pandas as pd
 
@@ -6,6 +7,46 @@ RAW_DATA_PATH = 'data/raw_data/cbecs'
 PROCESSED_DATA_PATH = 'data/processed_data/cbecs'
 DATA_PATH_ENDPOINT = 'data.csv'
 CODEBOOK_PATH_ENDPOINT = 'codebook.csv'
+
+ANALYTIC_DATA_PATH = 'data/analytic_data/'
+ANALYTIC_PATH_ENDPOINTS = {2012: 'train.csv', 2018: 'test.csv', 'Y': 'y_train.csv'}
+consumption2012vars = [
+    'MFHTBTU',
+    'MFCLBTU',
+    'MFVNBTU',
+    'MFWTBTU',
+    'MFLTBTU',
+    'MFCKBTU',
+    'MFRFBTU',
+    'MFOFBTU',
+    'MFPCBTU',
+    'MFOTBTU',
+    'ELHTBTU',
+    'ELCLBTU',
+    'ELVNBTU',
+    'ELWTBTU',
+    'ELLTBTU',
+    'ELCKBTU',
+    'ELRFBTU',
+    'ELOFBTU',
+    'ELPCBTU',
+    'ELOTBTU',
+    'NGHTBTU',
+    'NGCLBTU',
+    'NGWTBTU',
+    'NGCKBTU',
+    'NGOTBTU',
+    'FKHTBTU',
+    'FKCLBTU',
+    'FKWTBTU',
+    'FKCKBTU',
+    'FKOTBTU',
+    'DHHTBTU',
+    'DHCLBTU',
+    'DHWTBTU',
+    'DHCKBTU',
+    'DHOTBTU'
+    ]
 
 def find_num_cat_cols(df, category_num, list_of_numcols, list_of_catcols):
     numeric_cols = []
@@ -79,8 +120,37 @@ for year in YEARS:
     updated_codebook = create_new_codebook(df_codebook, list(df.columns))
     replace_map = create_replace_map(updated_codebook, df, return_errors=False)
     df_filled = df.replace(to_replace=replace_map, value=0).fillna(value=0)
-    #print(f'Data Sample: {year}\n{df_filled[:5].sample(5, random_state=5)}')
-    processed_dfs[year] = df_filled
+    if year == 2018:
+        df_filled = df_filled.replace(to_replace='.', value=0)
+        processed_dfs[year] = df_filled
+    else:
+        processed_dfs[year] = df_filled
 
-processed_dfs[2012].to_csv(PROCESSED_DATA_PATH+'2012_train_'+DATA_PATH_ENDPOINT, index=False)
-processed_dfs[2018].to_csv(PROCESSED_DATA_PATH+'2018_test_'+DATA_PATH_ENDPOINT, index=False)
+print("WRITING PROCESSED DATA")
+processed_dfs[2012].to_csv(PROCESSED_DATA_PATH+str(YEARS[0])+DATA_PATH_ENDPOINT, index=False)
+processed_dfs[2018].to_csv(PROCESSED_DATA_PATH+str(YEARS[1])+DATA_PATH_ENDPOINT, index=False)
+
+if os.path.exists(ANALYTIC_DATA_PATH) == False:
+    print("CREATING ANALYTIC DATA")
+    os.mkdir(ANALYTIC_DATA_PATH)
+    colset2012 = set(processed_dfs[2012].columns)
+    colset2018 = set(processed_dfs[2018].columns)
+    intersection = colset2012 & colset2018
+    difference = colset2012 - colset2018
+    print("Column intersection of 2012 and 2018 data:", len(intersection))
+    print("Column difference of 2012 and 2018 data:", len(difference))
+
+    x_train_df = processed_dfs[2012][list(intersection)].copy()
+    y_train_df = processed_dfs[2012][consumption2012vars].copy()
+    y_train_df['SUM'] = y_train_df.sum(axis=1)
+    train_df = pd.concat([x_train_df, y_train_df['SUM']], axis=1).rename(columns={'SUM': 'LABELS'})
+    test_df = processed_dfs[2018][list(intersection)].copy()
+
+    print("WRITING ANALYTIC DATA")
+    x_train_df.to_csv(ANALYTIC_DATA_PATH+'X_'+ANALYTIC_PATH_ENDPOINTS[2012])
+    y_train_df.to_csv(ANALYTIC_DATA_PATH+ANALYTIC_PATH_ENDPOINTS['Y'])
+    train_df.to_csv(ANALYTIC_DATA_PATH+ANALYTIC_PATH_ENDPOINTS[2012], index=False)
+    test_df.to_csv(ANALYTIC_DATA_PATH+ANALYTIC_PATH_ENDPOINTS[2018], index=False)
+
+else:
+    print("ANALYTIC DATA ALREADY EXISTS")
