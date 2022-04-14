@@ -1,6 +1,7 @@
 import os
 import json
 import pandas as pd
+import numpy
 
 YEARS = [2012, 2018]
 RAW_DATA_PATH = 'data/raw_data/cbecs'
@@ -117,14 +118,19 @@ for year in YEARS:
         df.YRCON.replace(to_replace=995, value=1945, inplace=True)
         df.ELLUPCT.replace(to_replace=999, value=None, inplace=True)
 
-    updated_codebook = create_new_codebook(df_codebook, list(df.columns))
-    replace_map = create_replace_map(updated_codebook, df, return_errors=False)
-    df_filled = df.replace(to_replace=replace_map, value=0).fillna(value=0)
+    # force data type
     if year == 2018:
-        df_filled = df_filled.replace(to_replace='.', value=0)
-        processed_dfs[year] = df_filled
+        df_filled = df.fillna(value=0).replace(to_replace='.', value="0")
     else:
-        processed_dfs[year] = df_filled
+        df_filled = df.fillna(value=0)
+    objects = list(df_filled.select_dtypes(['object']).columns)
+    for col in objects:
+        df_filled[col] = df_filled[col].astype(str).astype(int)
+
+    updated_codebook = create_new_codebook(df_codebook, list(df_filled.columns))
+    replace_map = create_replace_map(updated_codebook, df_filled, return_errors=False)
+    df_filled = df_filled.replace(to_replace=replace_map, value=0)
+    processed_dfs[year] = df_filled
 
 print("WRITING PROCESSED DATA")
 processed_dfs[2012].to_csv(PROCESSED_DATA_PATH+str(YEARS[0])+DATA_PATH_ENDPOINT, index=False)

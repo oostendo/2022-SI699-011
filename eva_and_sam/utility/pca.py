@@ -9,7 +9,7 @@ YEARS = [2012, 2018]
 ANALYTIC_DATA_PATH = 'data/analytic_data/'
 ANALYTIC_PATH_ENDPOINTS = {2012: 'train.csv', 2018: 'test.csv'}
 UTIL_PLOT_PATH = 'data/plots/'
-FLASK_PLOT_PATH = '../flask/templates'
+FLASK_PLOT_PATH = '../flask/templates/plots/'
 RANDOM_STATE = 699
 
 def read_analytic_data():
