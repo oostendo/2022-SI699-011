@@ -4,9 +4,7 @@ seaborn
 matplotlib
 numpy
 sklearn
-#json
 altair
-#vega_datasets
 flask
 requests
 beautifulsoup4

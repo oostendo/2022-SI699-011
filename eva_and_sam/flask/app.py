@@ -1,6 +1,5 @@
 import flask
 import altair as alt
-from vega_datasets import data
 import pandas as pd
 
 app = flask.Flask(__name__)
