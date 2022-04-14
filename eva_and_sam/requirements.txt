@@ -4,7 +4,7 @@ seaborn
 matplotlib
 numpy
 sklearn
-json
+#json
 altair
 #vega_datasets
 flask
