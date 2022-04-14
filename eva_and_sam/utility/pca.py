@@ -26,8 +26,9 @@ def save_alt_chart(alt_chart, chart_path):
         os.mkdir(UTIL_PLOT_PATH)
 
     if os.path.exists(FLASK_PLOT_PATH) == True:
+        print("SAVED CHART IN WEB APP DIRECTORY", FLASK_PLOT_PATH+chart_path)
         alt_chart.save(FLASK_PLOT_PATH+chart_path)
-        print("SAVED CHART IN WEB APP DIRECTORY")
+
     else:
         alt_chart.save(UTIL_PLOT_PATH+chart_path)
         print("SAVED CHART IN UTILITY DIRECTORY")
@@ -109,24 +110,32 @@ def narrow_num_components(user_input=False, return_summary=True, print_component
     # extract components based on threshold definitions
     threshold_exp_var = pca_exp_var[(pca_exp_var.cum_exp_var >= validated_thresh['min']) & (pca_exp_var.cum_exp_var <= validated_thresh['max'])].copy()
     components = {
-        'Minimum': int(threshold_exp_var.num_components.min()),
-        'Median': int(threshold_exp_var.num_components.median()),
-        'Maximum': int(threshold_exp_var.num_components.max())
+        'min_components': int(threshold_exp_var.num_components.min()),
+        'med_components': int(threshold_exp_var.num_components.median()),
+        'max_components': int(threshold_exp_var.num_components.max()),
     }
+    summary_dict = components.copy()
+    for k, v in components.items():
+        if 'min' in k:
+            summary_dict['min_expvar'] = round((threshold_exp_var.loc[(v-1)].cum_exp_var)*100)
+        elif 'med' in k:
+            summary_dict['med_expvar'] = round((threshold_exp_var.loc[(v-1)].cum_exp_var)*100)
+        else:
+            summary_dict['max_expvar'] = round((threshold_exp_var.loc[(v-1)].cum_exp_var)*100)
+    for k,v in validated_thresh.items():
+        if 'min' in k:
+            summary_dict['min_expvar_cutoff'] = v*100
+        else:
+            summary_dict['max_expvar_cutoff'] = v*100
+
+
 
     # display components
     if print_components == True:
         for k, v in components.items():
             print(f'{k} components explaining {round((threshold_exp_var.loc[(v-1)].cum_exp_var)*100, 2)}% variance = {v}')
     if return_summary == True:
-        summary = pd.DataFrame([validated_thresh, components]).fillna(method='ffill').fillna(method='bfill').drop(labels=[0])
-        summary.rename(columns={
-                "min": "expvar_min_cutoff",
-                "max": "expvar_max_cutoff",
-                "Minimum": "min_components",
-                "Median": "med_components",
-                "Maximum": "max_components"
-                }, inplace=True)
+        summary = pd.DataFrame(summary_dict, index=[0])#.fillna(method='ffill').fillna(method='bfill').drop(labels=[0])
 
     return validated_thresh, components, summary
 
@@ -186,30 +195,37 @@ pca_exp_var['cum_exp_var_pcent'] = pca_exp_var.cum_exp_var * 100
 # define explained variance thresholds
 # get number of components according to threshold
 threshold, number_components, optim_summary = narrow_num_components(return_summary=True, print_components=True)
-optim_summary['expvar_min_pcent'] = optim_summary.expvar_min_cutoff * 100
-optim_summary['expvar_max_pcent'] = optim_summary.expvar_max_cutoff * 100
 
 # plot optimal number of components
-pca_cum_exp = alt.Chart(pca_exp_var).mark_circle(size=60).encode(
-            x=alt.X("num_components:Q",
+# base chart
+pca_cum_exp = alt.Chart(pca_exp_var).mark_circle().encode(
+            x=alt.X('num_components:Q',
                 axis=alt.Axis(title='Number of Components', tickCount=25)),
-            y=alt.Y("cum_exp_var_pcent:Q",
-                axis=alt.Axis(title="Cumulative Percent Explained Variance"))
-        )
-min_hline = alt.Chart(optim_summary).mark_rule(color='red').encode(y='expvar_min_pcent')
-max_hline = alt.Chart(optim_summary).mark_rule(color='red').encode(y='expvar_max_pcent')
+            y=alt.Y('cum_exp_var_pcent:Q',
+                axis=alt.Axis(title='Cumulative Percent Explained Variance')),
+            tooltip=[alt.Tooltip('num_components', title='Number of Components'),
+                    alt.Tooltip('cum_exp_var_pcent', title='Cumulative Percent Explained Variance')]
+)
+# added markers
+min_hline = alt.Chart(optim_summary).mark_rule(color='red').encode(y='min_expvar_cutoff')
+max_hline = alt.Chart(optim_summary).mark_rule(color='red').encode(y='max_expvar_cutoff')
 min_vline = alt.Chart(optim_summary).mark_rule(color='blue').encode(x='min_components')
 max_vline = alt.Chart(optim_summary).mark_rule(color='blue').encode(x='max_components')
-pca_line = (pca_cum_exp + min_hline + max_hline + min_vline + max_vline)
-pca_line = pca_line.properties(
-            title="Optimal Number of Components"
-        ).configure_title(
-            fontSize=20,
-            font="Courier",
-            anchor="start",
-            color="gray"
-        )
-save_alt_chart(pca_line, "PCA_cumulative_expvar.html")
+
+#highlight optimal point
+point_emph = alt.Chart(optim_summary).mark_circle(color='green', size=100, filled=True).encode(
+    x='med_components:Q',
+    y='med_expvar:Q',
+    tooltip=[alt.Tooltip('med_components', title='Number of Components'),
+            alt.Tooltip('med_expvar', title='Cumulative Percent Explained Variance')]
+)
+# layer elements
+pca_chart = (pca_cum_exp + min_hline + max_hline + min_vline + max_vline + point_emph)
+pca_chart = pca_chart.properties(
+    title='Optimal Number of Principal Components'
+    ).configure_title(fontSize=20, font='Courier', anchor='start', color='gray')
+
+save_alt_chart(pca_chart, 'PCA_cumulative_expvar.html')
 
 # generate optimal PCA model
 print("OPTIMIZING PCA MODEL")
@@ -219,7 +235,7 @@ save_pca_output(pca_optim_components, ANALYTIC_DATA_PATH+"PCAcomponents_"+ANALYT
 # PCA on 2018 data
 X_test_scaled = scaler_train.transform(X_test)
 X_test_pca = pca_optim.transform(X_test_scaled)
-save_pca_output(X_test_pca, ANALYTIC_DATA_PATH+"PCAcomponents_"+ANALYTIC_PATH_ENDPOINTS[2018])
+save_pca_output(X_test_pca, ANALYTIC_DATA_PATH+"PCAcomponents_"+ANALYTIC_PATH_ENDPOINTS[2018], train=False)
 
 # 2D Scatter plot 2018
 test_pca_scatter = generate_2d_pca_scatterplot(X_test_pca, train=False)
