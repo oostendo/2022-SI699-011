@@ -20,7 +20,14 @@
         <nav>
             <a href="/">Home</a>
             <!--<a href="/about">About</a>-->
-            <a href="/pca">PCA</a>
+            <a href="/optim-components">Optimal Components</a>
+            <a href="/pca-2012">PCA 2012</a>
+            <a href="/pca-2018">PCA 2018</a>
+            <a href="/predictions-2018">Predictions</a>
+            <a href="/residuals-2012">Residuals</a>
+            <a href="/model-evaluation">Evaluation</a>
+            <a href="/insights">Insights</a>
+            <a href="/insights-2">PBA Modeling</a>
             <!--<a href="/table">Data Tables</a>-->
         </nav>
         <!--{% block nav_content %} {% endblock %}-->
@@ -28,11 +35,11 @@
             {% block main_content %} {% endblock %}
         </div>
 
-        <!--
-        <div class="chart_details">
-            {% block chart_details %} {% endblock %}
+
+        <div class="table">
+            {% block table %} {% endblock %}
         </div>
-        -->
+
 
         <div class="chart_content">
             {% block chart_content %} {% endblock %}

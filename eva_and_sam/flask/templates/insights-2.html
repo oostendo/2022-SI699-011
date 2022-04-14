@@ -1,0 +1,30 @@
+{% extends "_layout.html" %}
+{% block main_content %}
+    <h1>Modeling Principal Building Activity</h1>
+    <p>
+        We hypothesize there is a significant difference in the energy use intensity and
+        presence of a water heater booster. Results show that the differences are statistically
+        significant (p = 0.0099).
+        Thus, we modeled this building characteristic with energy usage intensity using OLS Linear Regression.
+        Unfortunately, this extremely simplified linear regression model does not explain 3% of the variance in the data.
+        In the future, performing feature selection of the original variables may help improve model performance and make
+        output and predictions more easily interpretable.
+    </p>
+    <h3> Regression Output </h3>
+{% endblock %}
+
+{% block table %}
+    <div id="ols-linreg">
+        <span class="table">
+            {% include 'tables/ols_html_summary.html' %}
+        </span>
+    </div>
+{% endblock %}
+
+{% block chart_content %}
+    <div id="insights">
+        <span class="plot">
+            {% include 'plots/boost_boxplot.html' %}
+        </span>
+    </div>
+{% endblock %}

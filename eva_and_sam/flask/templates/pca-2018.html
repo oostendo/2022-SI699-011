@@ -1,0 +1,19 @@
+{% extends "_layout.html" %}
+{% block main_content %}
+    <h1>Principal Components Analysis</h1>
+    <div>
+        When the 2012 PCA model is applied to the 2018 building characteristic data,
+        there are more groupings as well as a larger distribution of variance.
+        Zooming in towards the axis origin, a similar shape begins to take form.
+        Due to the structural similarities across characteristics, we speculate that our PCA model can be used
+        as the feature space to predict 2018 energy intensity.
+    </div>
+{% endblock %}
+
+{% block chart_content %}
+    <div id="cbecs2018">
+        <span class="plot">
+            {% include 'plots/2018PCA_scatter_plot.html' %}
+        </span>
+    </div>
+{% endblock %}

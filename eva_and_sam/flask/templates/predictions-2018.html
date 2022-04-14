@@ -1,0 +1,20 @@
+{% extends "_layout.html" %}
+{% block main_content %}
+    <h1>Predicted Total Energy Consumption</h1>
+    <div>
+        Although it is difficult to interpret multidimensional data in a 2-dimensional space,
+        we've plotted our predictions against the first principal component. This helps give us
+        an idea of how each of the model types are generating predictions. The green points were
+        predicted by the baseline linear regression  model, and the blue points were predicted by
+        the baseline SVM model. The predictions look consistent across both models, and this was
+        also reflected when computing evaluation metrics.
+    </div>
+{% endblock %}
+
+{% block chart_content %}
+    <div id="preds2018">
+        <span class="plot">
+            {% include 'plots/predicted_energy_consumption_scatter.html' %}
+        </span>
+    </div>
+{% endblock %}

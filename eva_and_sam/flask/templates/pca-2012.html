@@ -1,0 +1,26 @@
+{% extends "_layout.html" %}
+{% block main_content %}
+    <h1>Principal Components Analysis</h1>
+    <p>
+        The CBECS dataset is extremely robust and contains over 1,000 variables.
+        While we were able to exclude some of these features off the bat because they were not applicable to our project
+        (i.e. imputed variables, calculated weights, etc.), we decided to perform a PCA on the rest.
+        Many features in the CBECS dataset are dependent, or only collected, based on a response to a previous question.
+        This meant that there was a high degree of collinearity, and so we wanted to isolate the most important features to input into the model.
+        With dimensionality reduced to only the components which explain around 90% of the variance in the commercial building characteristic data,
+        and the data transformed into linear space, we were able to leverage the output and perform predictive modeling
+
+        The first two principal components can be visualized in two dimensional space using a scatterplot.
+        Here, we can see there is some underlying structure to the data. When this model is applied to the
+        2018 building characteristics, interesting groupings begin to form.
+
+    </p>
+{% endblock %}
+
+{% block chart_content %}
+    <div id="cbecs2012">
+        <span class="plot">
+            {% include 'plots/2012PCA_scatter_plot.html' %}
+        </span>
+    </div>
+{% endblock %}

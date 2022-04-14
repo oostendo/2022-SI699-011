@@ -1,0 +1,18 @@
+{% extends "_layout.html" %}
+{% block main_content %}
+    <h1>Predicted Total Energy Consumption</h1>
+    <div>
+        Residuals were plotted for each model evaluated using the existing 2012 energy consumption data.
+        Despite our models explaining much of the variance in the data, the residuals show marked
+        heteroscedasticity, even with a log-transformed dependent variable. In the future, it would be valuable
+        to analyze other energy consumption variables in addition to total energy consumption.
+    </div>
+{% endblock %}
+
+{% block chart_content %}
+    <div id="evaluation">
+        <span class="plot">
+            {% include 'plots/all_models_residual_scatter_plot.html' %}
+        </span>
+    </div>
+{% endblock %}

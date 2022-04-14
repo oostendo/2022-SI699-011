@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.17.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}, "title": {"anchor": "start", "color": "gray", "font": "Courier", "fontSize": 20}}, "vconcat": [{"mark": "bar", "encoding": {"tooltip": [{"field": "model", "type": "nominal"}, {"field": "r2", "type": "quantitative"}], "x": {"axis": {"title": "R-squared"}, "field": "r2", "type": "quantitative"}, "y": {"field": "model", "type": "nominal"}}}, {"mark": "bar", "encoding": {"tooltip": [{"field": "model", "type": "nominal"}, {"field": "mse", "type": "quantitative"}], "x": {"axis": {"title": "Mean Squared Error"}, "field": "mse", "type": "quantitative"}, "y": {"field": "model", "type": "nominal"}}}], "data": {"name": "data-aee46626b335f079f272e0e277f5ce1b"}, "resolve": {"scale": {"x": "shared"}}, "title": "Evaluation Metric Scores", "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "datasets": {"data-aee46626b335f079f272e0e277f5ce1b": [{"model": "baseline", "r2": 0.8739026357975339, "mse": 0.7059275540612047}, {"model": "ridge", "r2": 0.8739026347809298, "mse": 0.7059275597524323}, {"model": "lasso", "r2": 0.7400650432307194, "mse": 1.4551870247859982}, {"model": "elastic net", "r2": 0.7573949857797249, "mse": 1.358169263685158}, {"model": "baseline svm", "r2": 0.8722126151890035, "mse": 0.7153887519382459}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

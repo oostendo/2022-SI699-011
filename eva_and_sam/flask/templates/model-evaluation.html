@@ -1,0 +1,24 @@
+{% extends "_layout.html" %}
+{% block main_content %}
+    <h1>Model Selection and Evaluation</h1>
+    <div>
+        Since we used multidimensional scaling to project our features into linear space,
+        we chose simple ordinary least squares linear regression as our baseline.
+        We also examined regularized regression models, and a baseline SVM with linear kernel.
+        We preformed optimization using a cross-validation grid search to tune the model's
+        hyperparameters. We compared all of our  models' performance, aiming to maximize how much
+        variance our model could explain (R-squared) and minimize the average prediction error (MSE).
+        Ultimately, we decided to make predictions using both the baseline SVM and Linear regression models.
+        <h3 style="text-align: left; margin-left: 20%;">Metric Scores</h3>
+    </div>
+{% endblock %}
+{% block table %}
+{% include 'tables/evaluation_metrics_table_styled.html' %}
+{% endblock %}
+{% block chart_content %}
+    <div id="metrics">
+        <span class="table">
+            {% include 'plots/eval_metrics_bar_chart.html' %}
+        </span>
+    </div>
+{% endblock %}

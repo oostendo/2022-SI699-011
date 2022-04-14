@@ -1,20 +1,25 @@
 {% extends "_layout.html" %}
 {% block main_content %}
-    <h1>Home Page</h1>
+    <h1>SI699 - Big Data Mastery Course Project Overview</h1>
     <h2>2012 CBECS Data Analysis and 2018 Energy Consumption Predictions</h2>
+    <h4 style="text-align:center">Samantha Ryan-Lee & Eva Zenilman - April 14, 2022</h4>
+    <h5 style="text-align:center">University of Michigan, School of Information</h5>
+    <h3>Overview</h3>
+    <p>
+        We are (hypothetically) providing the American Council for an Energy Efficient Economy (ACEEE) with insights to inform their advocacy efforts, based on the Commercial Building Energy Consumption Survey (CBECS). 
+        These insights will enable the organization to maximize their impact, yielding more energy savings per dollar spent on advocacy.
+        The purpose is to ultimately reduce the carbon footprint of commercial buildings, as all buildings (commercial and residential) are responsible for 32% of greenhouse gas emissions in the U.S.
+    </p>
+    <h3>
+        Methodology
+    </h3>
+    <p>
+        Leverage dimensionality reduction techniques to extract only the features which account for a significant proportion of
+        the variance in the data. Then apply predictive modeling techniques to select an optimal model and predict 2018
+        commercial building total energy consumption.
+    </p>
 {% endblock %}
-
 {% block chart_content %}
-    <h2>Charts</h2>
-    {% for c in charts %}
-        <div>
-            <span class="name">
-                {{ c.name }}
-            </span>
-            <span class="type">
-                {{ c.chart }}
-            </span>
-        </div>
-    {% endfor %}
-
+    <img alt="ProjectArchitecture" src="../static/img/project_architecture.jpg" />
 {% endblock %}
+

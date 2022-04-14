@@ -33,14 +33,23 @@ def save_alt_chart(alt_chart, chart_path):
         alt_chart.save(UTIL_PLOT_PATH+chart_path)
         print("SAVED CHART IN UTILITY DIRECTORY")
 
+def transform_pca_output_to_df(pca_components):
+    pca_df = pd.DataFrame(pca_components)
+    new_cols = {}
+    for col_index in pca_df.columns:
+        new_cols[col_index] = "PC"+str(col_index+1)
+    pca_df.rename(columns=new_cols, inplace=True)
+    return pca_df
+
 def save_pca_output(pca_output, csv_path, train=True):
+    pca_df = transform_pca_output_to_df(pca_output)
     if train == False:
         dataset = 'TEST DATA'
     else:
         dataset = 'TRAIN DATA'
     if os.path.exists(ANALYTIC_DATA_PATH):
         print(f"SAVING PCA COMPONENTS: {dataset}")
-        np.savetxt(csv_path, pca_output, delimiter=',')
+        pca_df.to_csv(csv_path, index=False)
     else:
         print("DirectoryNotFoundError: Please run utility scripts and try again.")
 
@@ -52,11 +61,7 @@ def generate_2d_pca_scatterplot(pca_components, save_plot=True, train=True):
 
     chart_path = year + "PCA_scatter_plot.html"
     title_text = year + " Building Characteristics"
-    pca_df = pd.DataFrame(pca_components)
-    new_cols = {}
-    for col_index in pca_df.columns:
-        new_cols[col_index] = "PC"+str(col_index+1)
-    pca_df.rename(columns=new_cols, inplace=True)
+    pca_df = transform_pca_output_to_df(pca_components)
 
     pca_scatter = alt.Chart(pca_df
     ).mark_circle(size=60
@@ -67,7 +72,7 @@ def generate_2d_pca_scatterplot(pca_components, save_plot=True, train=True):
 
     if save_plot:
         save_alt_chart(pca_scatter, chart_path)
-    return pca_scatter
+    return pca_scatter, pca_df
 
 def get_user_defined_threshold(input_prompt):
     valid_input = False

@@ -1,0 +1,25 @@
+{% extends "_layout.html" %}
+{% block main_content %}
+    <h1>Insights and Conclusions</h1>
+    <p>
+        Food service establishments with a water heater booster have lower predicted energy use intensity than those without.
+        We would therefore recommend that the ACEEE work with restaurant industry groups and/or major food chains to encourage installation of water heater boosters.
+    </p>
+    <h3>Highest median energy use intensity by Principal Building Activity </h3>
+{% endblock %}
+
+{% block table %}
+    <div id="med_eui">
+        <span class="table">
+            {% include 'tables/food_service_median_eui_styled.html' %}
+        </span>
+    </div>
+{% endblock %}
+
+{% block chart_content %}
+    <div id="insights">
+        <span class="plot">
+            {% include 'plots/boost_boxplot.html' %}
+        </span>
+    </div>
+{% endblock %}

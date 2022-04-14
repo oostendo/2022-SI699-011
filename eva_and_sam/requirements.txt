@@ -6,4 +6,11 @@ numpy
 sklearn
 json
 altair
-vega_datasets
+#vega_datasets
+flask
+requests
+beautifulsoup4
+html5lib
+openpyxl
+seaborn
+statsmodels
