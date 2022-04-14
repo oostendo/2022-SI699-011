@@ -4,23 +4,9 @@ import pandas as pd
 
 app = flask.Flask(__name__)
 
-df = pd.DataFrame({'A': [0, 1, 2, 3, 4],
-                   'B': [5, 6, 7, 8, 9],
-                   'C': ['a', 'b', 'c--', 'd', 'e']})
-
-def get_pca_charts():
-    # ideally you pull these from the database, but for now they're hard coded
-    pca_charts = [
-        {"filename": "2012PCA_scatter_plot.html", "year": "2012"},
-        {"filename": "2018PCA_scatter_plot.html", "year": "2018"},
-    ]
-    return pca_charts
-
 @app.route('/')
 def index():
-     # the list to be rendered into the template
     return flask.render_template('index.html')
-    # key is charts (referred to in the template), value is charts items from get_charts() function
 
 @app.route('/optim-components')
 def components():
