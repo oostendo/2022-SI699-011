@@ -266,11 +266,11 @@ test_preds['lr_preds'] = y_pred_lr
 test_preds['svm_preds'] = y_pred_svm
 
 preds_scatter = alt.Chart(test_preds).mark_circle().transform_fold(
-    fold=['lr_preds', 'svm_preds'], 
+    fold=['lr_preds', 'svm_preds'],
     as_=['model', 'prediction']
 ).encode(
     x='PC1:Q',
-    y=alt.Y('value:Q', axis=alt.Axis(title='Energy Consumption')),
+    y=alt.Y('prediction:Q', axis=alt.Axis(title='Energy Consumption')),
     color='model:N'
 )
 
