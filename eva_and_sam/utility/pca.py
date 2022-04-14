@@ -26,7 +26,7 @@ def save_alt_chart(alt_chart, chart_path):
         os.mkdir(UTIL_PLOT_PATH)
 
     if os.path.exists(FLASK_PLOT_PATH) == True:
-        print("SAVED CHART IN WEB APP DIRECTORY", FLASK_PLOT_PATH+chart_path)
+        print("SAVED CHART IN WEB APP DIRECTORY")
         alt_chart.save(FLASK_PLOT_PATH+chart_path)
 
     else:
