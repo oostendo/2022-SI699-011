@@ -22,16 +22,11 @@ def read_analytic_data():
     return train_df, test_df
 
 def save_alt_chart(alt_chart, chart_path):
-    if os.path.exists(UTIL_PLOT_PATH) == False:
-        os.mkdir(UTIL_PLOT_PATH)
-
+    if os.path.exists(FLASK_PLOT_PATH) == False:
+        os.mkdir(FLASK_PLOT_PATH)
     if os.path.exists(FLASK_PLOT_PATH) == True:
-        print("SAVED CHART IN WEB APP DIRECTORY")
         alt_chart.save(FLASK_PLOT_PATH+chart_path)
-
-    else:
-        alt_chart.save(UTIL_PLOT_PATH+chart_path)
-        print("SAVED CHART IN UTILITY DIRECTORY")
+        print("Saved Chart in Web App Directory")
 
 def transform_pca_output_to_df(pca_components):
     pca_df = pd.DataFrame(pca_components)
@@ -146,8 +141,8 @@ def narrow_num_components(user_input=False, return_summary=True, print_component
 
 def optimize_pca(train_scaled, optim_summary, use_default_components=True):
     if use_default_components == False:
-        user_input = input("Please enter the number of components to fit:")
-        num_components = get_user_defined_num_components(user_input, optim_summary)
+        user_input_prompt = "Please enter the number of components to fit:"
+        num_components = get_user_defined_num_components(user_input_prompt, optim_summary)
     else:
         print("Using Default Number Components for Optimization")
         num_components = int(optim_summary.med_components.values)
@@ -167,7 +162,7 @@ def get_user_defined_num_components(input_prompt, component_summary):
         except ValueError as x:
             print(error_type_msg)
             continue
-        if integer > component_summary.min_components and integer < component_summary.max_components:
+        if integer > int(component_summary.min_components) and integer < int(component_summary.max_components):
             valid_input = True
             validated = integer
         else:
@@ -199,7 +194,7 @@ pca_exp_var['cum_exp_var_pcent'] = pca_exp_var.cum_exp_var * 100
 
 # define explained variance thresholds
 # get number of components according to threshold
-threshold, number_components, optim_summary = narrow_num_components(return_summary=True, print_components=True)
+threshold, number_components, optim_summary = narrow_num_components(user_input=True, return_summary=True, print_components=True)
 
 # plot optimal number of components
 # base chart
@@ -234,7 +229,7 @@ save_alt_chart(pca_chart, 'PCA_cumulative_expvar.html')
 
 # generate optimal PCA model
 print("OPTIMIZING PCA MODEL")
-pca_optim, pca_optim_components = optimize_pca(X_train_scaled, optim_summary, use_default_components=True)
+pca_optim, pca_optim_components = optimize_pca(X_train_scaled, optim_summary, use_default_components=False)
 save_pca_output(pca_optim_components, ANALYTIC_DATA_PATH+"PCAcomponents_"+ANALYTIC_PATH_ENDPOINTS[2012])
 
 # PCA on 2018 data

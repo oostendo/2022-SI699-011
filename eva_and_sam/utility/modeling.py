@@ -53,14 +53,11 @@ def save_table_as_html(df, table_path):
         print("SAVED CHART IN UTILITY DIRECTORY")
 
 def save_alt_chart(alt_chart, chart_path):
-    if os.path.exists(UTIL_PLOT_PATH) == False:
-        os.mkdir(UTIL_PLOT_PATH)
+    if os.path.exists(FLASK_PLOT_PATH) == False:
+        os.mkdir(FLASK_PLOT_PATH)
     if os.path.exists(FLASK_PLOT_PATH) == True:
         alt_chart.save(FLASK_PLOT_PATH+chart_path)
         print("Saved Chart in Web App Directory")
-    else:
-        alt_chart.save(UTIL_PLOT_PATH+chart_path)
-        print("Saved Chart in Utility Directory")
 
 def save_final_predictions(preds_df, file_path):
     if os.path.exists(PREDICTION_PATH) == False:
@@ -239,6 +236,7 @@ eval_metrics_long = eval_metrics_df.T.reset_index().rename(columns={'index':'mod
 print("FINAL MODELING METRICS")
 print(eval_metrics_long)
 _ = save_table_as_html(eval_metrics_long, 'evaluation_metrics_table.html')
+
 eval_bars_r2 = alt.Chart(eval_metrics_long).mark_bar().encode(
     y='model:N',
     x=alt.X('r2:Q', axis=alt.Axis(title='R-squared')),

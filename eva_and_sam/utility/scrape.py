@@ -12,11 +12,14 @@ TAB_ENDPOINT = 'index.php?view='
 tabs = ['characteristcs', 'consumption', 'microdata', 'methodology']
 data_path = 'data/'
 html_path = data_path+'html/'
+raw_path = data_path+'raw_data/'
 
 if os.path.exists(data_path) == False:
     os.mkdir(data_path)
 if os.path.exists(html_path) == False:
     os.mkdir(html_path)
+if os.path.exists(raw_path) == False:
+    os.mkdir(raw_path)
 
 def collect_cbecs_microdata(soup):
     results = soup.find("div", id=tabs[2])

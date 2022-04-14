@@ -29,20 +29,20 @@ df_2018 = pd.read_csv('data/predictions/df_2018_predictions.csv')
 df_2018.loc[df_2018.predicted > df_2018.predicted.quantile(0.95), "outlier"] = 1
 df_2018.loc[df_2018.predicted < df_2018.predicted.quantile(0.05), "outlier"] = 1
 
-df_2018 = df_2018.drop(df_2018[df_2018.outlier == 1].index)
+df_2018 = df_2018.drop(df_2018[df_2018.outlier == 1].index.copy())
 df_2018.reset_index(drop=True, inplace=True)
 
 df_2018["eui"] = df_2018['predicted'] / df_2018["SQFT"]
 
 ## Highest median energy use intensity by Principal Building Activity
 # PBA 15 = Food Service
-food_df = df_2018.groupby("PBA").median().sort_values('eui', ascending=False)
-print(food_df.columns)
-food_df = food_df[['predicted', 'eui']].copy()
-print(bool('PBA' in food_df.columns))
+food_df = df_2018.groupby("PBA").median().sort_values('eui', ascending=False).reset_index().copy()
+food_df = food_df[['PBA','predicted', 'eui']].copy()
+#print(food_df.columns)
+#print(bool('PBA' in food_df.columns))
 food_df.to_html(FLASK_TABLE_PATH+'food_service_median_eui.html', index=False, col_space='30px')
 
-df_food_service = df_2018[(df_2018.PBA == 15)]
+df_food_service = df_2018[(df_2018.PBA == 15)].copy()
 df_food_service.drop(df_food_service[df_food_service.predicted < -50].index, inplace=True) # without outlier
 
 # water boost

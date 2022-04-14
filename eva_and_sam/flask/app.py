@@ -54,9 +54,6 @@ def insights():
 def insights2():
     return flask.render_template('insights-2.html')
 
-# @app.route('/table')
-# def html_table():
-#     return flask.render_template('table.html',  tables=[df.to_html(classes='data', index=False)], titles=df.columns.values)
 
 if __name__ == "__main__":
     app.run(port=5000, debug=True)
