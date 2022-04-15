@@ -1,0 +1,114 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title>Demo</title>
+
+        <!-- 注意: 部署时，将 "development.js" 替换为 "production.min.js"。-->
+        <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+        <!-- 加载我们的 React 组件。-->
+        <script type="module" src={% static "Home/JS/react_template.js" %}></script>
+
+        <link href={% static "Home/CSS/main.css" %} rel="stylesheet"/>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+        />
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+      <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+      <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1/build/vega.min.js" crossorigin></script>
+      <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0/build/vega-lite.min.js" crossorigin></script>
+      <!-- Import vega-embed -->
+      <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.8/build/vega-embed.min.js" crossorigin></script>
+
+
+  </head>
+  <body>
+    <div id="page-container">
+    <div id="nav-bar-placeholder">
+
+    </div>
+{#    {% if tem %}#}
+    <p>Current Path {{ tem }}</p>
+
+
+
+    {#https://docs.djangoproject.com/zh-hans/4.0/ref/templates/builtins/#}
+
+
+
+
+{#    {% else %}#}
+{#        <p>No items are available.</p>#}
+{#    {% endif %}#}
+
+    <div class="alert alert-warning" role="alert">
+      We have the linear regression model here:
+    </div>
+
+    <p>
+      <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+        Click to show production data.
+      </a>
+    </p>
+    <div class="collapse" id="collapseExample">
+      <div id="vis" class="card card-body">
+
+      </div>
+    </div>
+
+
+
+       <script>
+          var my_json = {{lr_json|safe}};
+          vegaEmbed('#vis', my_json).then(function(result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+          }).catch(console.error);
+        </script>
+{#        {{ my_json }}#}
+{#    <img src="{% static "Home/fig1.jpeg" %}">#}
+
+
+
+
+
+    <div class="alert alert-warning" role="alert">
+      We have the decision tree model result here:
+    </div>
+
+    <p>
+      <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+        Click to show production data.
+      </a>
+    </p>
+    <div class="collapse" id="collapseExample2">
+      <div id="vis2" class="card card-body">
+
+      </div>
+    </div>
+
+
+       <script>
+          var my_json = {{dt_json|safe}};
+          vegaEmbed('#vis2', my_json).then(function(result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+          }).catch(console.error);
+        </script>
+{#        {{ my_json }}#}
+{#    <img src="{% static "Home/fig1.jpeg" %}">#}
+
+    </div>
+  </body>
+  <script src={% static "Home/JS/main.js" %}></script>
+</html>

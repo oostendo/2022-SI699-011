@@ -1,0 +1,26 @@
+body {
+    background-color:black !important;
+
+}
+
+#page-container {
+    text-align:center;
+    align-content:center;
+    width: auto;
+    margin:1em;
+}
+
+.table {
+    width: 100%;
+}
+
+.middle-card {
+   align-content: center;
+   text-align: center;
+
+}
+
+nav {
+    text-align: left;
+}
+
