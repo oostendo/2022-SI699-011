@@ -1,3 +1,8 @@
-BDFC README
+<<<<<<< HEAD
+# SI 699 Project - Facial Detection
+## BDFC
 
--Sammy, Yash, Sasha, Bulgan
+Bulgan Jugderkhuu, Sammy Stern, Sasha Kenkre, Yash Kamat
+=======
+# si699
+>>>>>>> c290b0d0911bb33c010f6b04606ca161a5868395
